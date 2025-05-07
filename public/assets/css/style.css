@@ -471,27 +471,6 @@
 .latest-blog .col-3 .card .card-body .blog-btn-read a {
   font-size: 14px;
 }
-.swiper-button-next2,
-.swiper-button-prev2 {
-  position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
-  margin-top: -22px;
-  z-index: 10;
-  cursor: pointer;
-  background-size: 27px 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.swiper-button-next2 {
-  right: 10px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,<svg fill='black' ... />"); /* You can use an icon or SVG */
-}
-.swiper-button-prev2 {
-  left: 10px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,<svg fill='black' ... />");
-}
 
 /* =================  End of  Latest Blog Section ================== */
 /* =================  Footer Section ================== */
@@ -542,9 +521,8 @@ footer .new-letter-footer-form form button {
   border-radius: 3px;
 }
 footer .new-letter-footer-form form button i {
-  
-  font-size: 10px;
-]
+    font-size: 10px;
+
 }
 footer .new-letter-footer-form form input:focus {
   outline: none;
@@ -553,3 +531,178 @@ footer .new-letter-footer-form form input:focus {
 }
 
 /* =================  End of  Footer Section ================== */
+/* ================= Product Detial Page ====================== */
+/* ================= Product Detial Hero Section ====================== */
+.hero-detail-product {
+  background-image: url(../img/product-detail-hero-bg.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.hero-detail-product .hero-pro-detail-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.hero-detail-product .decor-product-detail-hero{
+  width: 20px;
+  background-color: rgb(191, 247, 247);
+  height: 2px;
+  margin: 0 15px;
+}
+
+/* ================= End Product Detial Hero Section ====================== */
+/* ================= More Product Detial Hero Section ====================== */
+
+.swiper4 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.more-detail-product .swiper4:hover .swiper-button-next {
+  opacity: 1;
+}
+.more-detail-product .swiper4:hover .swiper-button-prev {
+  opacity: 1;
+}
+.more-detail-product .swiper4 .swiper-button-prev {
+  left: -1.3%;
+  top: 45%;
+  z-index: 22;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.more-detail-product .swiper4 .swiper-button-prev::after {
+  font-size: 25px;
+  background-color: tomato;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 50%;
+}
+.more-detail-product .swiper4 .swiper-button-next {
+  right: -1.3%;
+  top: 45%;
+  z-index: 22;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.more-detail-product .swiper4 .swiper-button-next::after {
+  font-size: 25px;
+  background-color: tomato;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 50%;
+}
+
+.more-detail-product .swiper-slide4 .card {
+  border-radius: 0;
+  padding: 10px;
+}
+.more-detail-product .swiper-slide4 .card img {
+  border-radius: 0;
+}
+.more-detail-product .swiper4 .swiper-slide4{
+  cursor: pointer;
+}
+.more-detail-product .feedback-product-star i{
+  padding: 0 3px;
+  font-size: 13px;
+  color: orange;
+  margin-top: -17px;
+}
+.more-detail-product .more-detail-desc {
+  font-size: 17.5px;
+}
+.more-product-color .more-product-color-customize {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  margin-right:8px;
+}
+.more-product-color .more-product-color-customize:nth-child(2) {
+  background-color: tomato;
+}
+.product-color .more-product-color-customize:nth-child(3) {
+  background-color: rgb(75, 103, 80);
+}
+.more-product-color .more-product-color-customize:nth-child(4) {
+  background-color: rgb(13, 65, 111);
+}
+.more-product-color .more-product-color-customize:nth-child(4) {
+  background-color: rgb(13, 65, 111);
+}
+.more-product-color .more-product-color-customize:last-child {
+  background-color: rgb(85, 255, 29);
+}
+.button-group {
+  display: flex;
+  gap: 10px; 
+}
+
+.select-btn-weight {
+  padding: 6px 16px;
+  border: 2px solid transparent;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: border-color 0.3s ease; 
+}
+
+.select-btn-weight.active {
+  border: 2px solid #000; 
+  background-color: tomato; 
+  color: white;
+}
+.counter-container {
+  width: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+}
+
+.counter-btn {
+  padding: 6px 15px;
+  border: none;
+  font-size: 18px;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+.counter-btn:first-child{
+  border-top-left-radius:20px ;
+  border-bottom-left-radius:20px ;
+  border-right: 1px solid rgb(130, 164, 176);
+}
+.counter-btn:last-child{
+  border-top-right-radius:20px ;
+  border-bottom-right-radius:20px ;
+  border-left: 1px solid rgb(130, 164, 176);
+}
+
+.counter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.counter-btn:active {
+  background-color: #e0e0e0;
+}
+
+.counter-value {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.more-detail-product .add-to-cart-detail-pro a{
+  background-color: tomato;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+/* ================= End More Product Detial Hero Section ====================== */
+/* ================= End Product Detial Page ====================== */
