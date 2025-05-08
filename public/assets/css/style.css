@@ -993,13 +993,16 @@ footer .new-letter-footer-form form input:focus {
   padding: 10px 20px;
   border-radius: 6px;
 }
-.shop-section .first-child-shop-col-9 .first-child-shop-col-9-item select{
+.shop-section .first-child-shop-col-9 .first-child-shop-col-9-item select {
   padding: 10px 15px;
   border-radius: 6px;
   border: 1px solid lightgray;
   cursor: pointer;
 }
-.shop-section .first-child-shop-col-9 .first-child-shop-col-9-item select:focus{
+.shop-section
+  .first-child-shop-col-9
+  .first-child-shop-col-9-item
+  select:focus {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: 1px solid transparent;
 }
@@ -1021,5 +1024,125 @@ footer .new-letter-footer-form form input:focus {
 }
 .tab-shop-content.active {
   display: block;
+}
+.shop-section .tab-shop-content .card .add-cart-btn-shop-list a {
+  background-color: tomato;
+  font-size: 15px;
+  padding: 5px 17px;
+  border-radius: 3px;
+  color: white;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.shop-section .tab-shop-content .card:hover .add-cart-btn-shop-list a {
+  opacity: 1;
+}
+.shop-section .tab-shop-content .card .product-list-cover img {
+  transition: 0.2s ease-in-out;
+}
+.shop-section .tab-shop-content .card .pro-name-shop-list {
+  transition: 0.2s ease-in-out;
+}
+.shop-section .tab-shop-content .card .pro-name-shop-list:hover {
+  color: tomato !important;
+}
+.shop-section .tab-shop-content .card:hover .product-list-cover img {
+  transform: scale(1.1);
+}
+.shop-section .pagination-list-product-shop ul {
+  list-style: none;
+}
+.shop-section .pagination-list-product-shop ul li {
+  cursor: pointer;
+  padding: 10px 18px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.shop-section .pagination-list-product-shop ul li:hover {
+  background-color: tomato;
+}
+.shop-section .pagination-list-product-shop ul li:hover a {
+  color: white !important;
+}
+.shop-section .pagination-list-product-shop ul li.active {
+  background-color: tomato;
+}
+.shop-section .pagination-list-product-shop ul li.active a {
+  color: white !important;
+}
+.shop-section .pagination-list-product-shop ul li a {
+  text-decoration: none;
+  color: darkslategray;
+}
+.tab-shop-content .product-list-col-wrapper-item {
+  height: 300px;
+  border-radius: 6px;
+  border: 1px solid rgb(210, 210, 210);
+}
+.tab-shop-content .product-list-col-wrapper-item .col-8 {
+  height: 100%;
+  padding: 0 14px;
+}
+.tab-shop-content .product-list-col-wrapper-item .product-list-col-cover img {
+  width: 250px;
+}
+.tab-shop-content .product-list-col-wrapper-item .col-4 h4 {
+  color: tomato;
+  margin-bottom: 10px;
+}
+.tab-shop-content .product-list-col-wrapper-item .col-4 i {
+  font-size: 11px;
+  padding: 0 4px;
+  color: orange;
+}
+.tab-shop-content .product-list-col-wrapper-item .col-4 .star-rate-amount-shop {
+  font-size: 14px;
+}
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-4
+  .product-list-col-btn-add-cart
+  a {
+  border: 1px solid tomato;
+  padding: 10px 40px;
+  color: tomato;
+  border-radius: 3px;
+}
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-4
+  .product-list-col-btn-add-cart
+  a:hover {
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  background-color: tomato;
+}
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-4
+  .product-list-col-btn-add-cart
+  a:hover i {
+  color: rgb(255, 255, 255);
+}
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-4
+  .product-list-col-btn-add-cart
+  a
+  > i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.shop-section .tab-shop-content .product-list-col-wrapper-item .product-list-col-cover img{
+  transition: .2s ease-in-out;
+}
+.shop-section .tab-shop-content .product-list-col-wrapper-item:hover .product-list-col-cover img{
+  transform: scale(1.1);
+}
+.shop-section .tab-shop-content .product-list-col-wrapper-item .socail-action-product-list-col i{
+  font-size: 22px;
 }
 /* ================= End Shop Product Page ====================== */
