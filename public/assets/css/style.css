@@ -1078,13 +1078,20 @@ footer .new-letter-footer-form form input:focus {
   color: darkslategray;
 }
 .tab-shop-content .product-list-col-wrapper-item {
-  height: 300px;
+  height: auto;
   border-radius: 6px;
+  overflow: hidden;
   border: 1px solid rgb(210, 210, 210);
 }
 .tab-shop-content .product-list-col-wrapper-item .col-8 {
-  height: 100%;
-  padding: 0 14px;
+  padding: 15px;
+  padding-left: 28px;
+}
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-8
+  .product-list-col-content {
+  padding-left: 15px !important;
 }
 .tab-shop-content .product-list-col-wrapper-item .product-list-col-cover img {
   width: 250px;
@@ -1124,7 +1131,8 @@ footer .new-letter-footer-form form input:focus {
   .product-list-col-wrapper-item
   .col-4
   .product-list-col-btn-add-cart
-  a:hover i {
+  a:hover
+  i {
   color: rgb(255, 255, 255);
 }
 .tab-shop-content
@@ -1136,13 +1144,180 @@ footer .new-letter-footer-form form input:focus {
   font-size: 18px;
   padding-right: 10px;
 }
-.shop-section .tab-shop-content .product-list-col-wrapper-item .product-list-col-cover img{
-  transition: .2s ease-in-out;
+.shop-section
+  .tab-shop-content
+  .product-list-col-wrapper-item
+  .product-list-col-cover
+  img {
+  transition: 0.2s ease-in-out;
 }
-.shop-section .tab-shop-content .product-list-col-wrapper-item:hover .product-list-col-cover img{
+.shop-section
+  .tab-shop-content
+  .product-list-col-wrapper-item:hover
+  .product-list-col-cover
+  img {
   transform: scale(1.1);
 }
-.shop-section .tab-shop-content .product-list-col-wrapper-item .socail-action-product-list-col i{
+.shop-section
+  .tab-shop-content
+  .product-list-col-wrapper-item
+  .socail-action-product-list-col
+  i {
   font-size: 22px;
 }
 /* ================= End Shop Product Page ====================== */
+/* ================= cart checkout Shop Product Page ====================== */
+.cart-checkout .row .col-8 .col-12 .cancel-btn-cart i {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 13px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 50%;
+  font-size: 17px;
+}
+.cart-checkout .row .col-8 .col-12 .cart-cover-checkout img {
+  width: 100px;
+  border-radius: 6px;
+  margin: 0 15px;
+}
+.cart-checkout .row .col-8 .col-12 .cart-content-text {
+  font-size: 13px;
+}
+.cart-checkout .row .col-8 .col-12 .cart-content-text p:first-child {
+  font-size: 16px;
+}
+.cart-checkout .row .col-4 .redeme-coupon input {
+  font-size: 15px !important;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgb(220, 220, 220) !important;
+}
+.cart-checkout .row .col-4 {
+  position: sticky !important;
+  top: 0 !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+  height: 570px !important;
+}
+.cart-checkout .row .col-4 .redeme-coupon button {
+  background-color: tomato;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+.cart-checkout .row .col-4 .redeme-coupon button:hover {
+  background-color: darkslategray;
+  color: white;
+
+}
+.cart-checkout .row .col-4 .add-check-btn-cart button {
+  background-color: tomato;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+.cart-checkout .row .col-4 .add-check-btn-cart button:hover {
+  background-color: darkslategray;
+  color: white;
+
+}
+.cart-checkout .row .col-4 .redeme-coupon input:focus {
+  outline: none;
+  box-shadow: rgba(248, 91, 25, 0.2) 0px 7px 29px 0px;
+}
+
+.cart-checkout .row .col-4 .text-area-cart textarea {
+  resize: none;
+  height: 90px;
+  font-size: 15px !important;
+  border-radius: 6px;
+  border: 1px solid rgb(220, 220, 220) !important;
+  transition: 0.2s ease-in-out;
+}
+.cart-checkout  .col-4 .text-area-cart textarea:focus {
+  outline: none;
+  box-shadow: rgba(248, 91, 25, 0.2) 0px 7px 29px 0px;
+}
+.new-product-cart-checkout .col-auto {
+  width: 18.8%;
+  height: auto;
+}
+.new-product-cart-checkout  .card:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.new-product-cart-checkout  .card:hover a {
+  color: tomato;
+  cursor: pointer;
+}
+.new-product-cart-checkout  .card img {
+  transition: 0.3s ease-in-out;
+}
+.new-product-cart-checkout  .card a {
+  color: black;
+  text-decoration: none;
+}
+.new-product-cart-checkout  .card a {
+  transition: 0.1s ease-in-out;
+}
+.new-product-cart-checkout  .card {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+.new-product-cart-checkout .card .cart-btn {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.new-product-cart-checkout  .card:hover .cart-btn {
+  opacity: 1;
+}
+.new-product-cart-checkout  .card a:hover {
+  background-color: darkslategray;
+}
+.new-product-cart-checkout  .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper6 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.new-product-cart-checkout .swiper6:hover .swiper-button-next {
+  opacity: 1;
+}
+.new-product-cart-checkout .swiper6:hover .swiper-button-prev {
+  opacity: 1;
+}
+.new-product-cart-checkout .swiper6 .swiper-button-prev {
+  left: -1.3%;
+  top: 45%;
+  z-index: 22;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.new-product-cart-checkout .swiper6 .swiper-button-prev::after {
+  font-size: 25px;
+  background-color: tomato;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 50%;
+}
+.new-product-cart-checkout .swiper6 .swiper-button-next {
+  right: -1.3%;
+  top: 45%;
+  z-index: 22;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.new-product-cart-checkout .swiper6 .swiper-button-next::after {
+  font-size: 25px;
+  background-color: tomato;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 50%;
+}
+/* ================= End cart checkout Shop Product Page ====================== */

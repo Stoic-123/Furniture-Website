@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-flex align-items-center justify-content-between"
+            >
+              <ul
+                class="navbar-nav gap-5 align-items-center justify-content-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Pages</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <div class="fs-5">
+                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
+                <i class="pe-4 fa-regular fa-user"></i>
+                <i class="pe-4 fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-detail-product my-5 position-relative">
+        <div class="hero-pro-detail-overlay z-1 position-absolute"></div>
+        <div class="container h-100">
+          <div
+            class="h-100 position-relative text-white z-3 d-flex flex-column justify-content-center"
+          >
+            <h1 class="fw-bolder">Shopping Cart</h1>
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-white" href="homepage.html"
+                >Home</a
+              >
+              <div class="decor-product-detail-hero"></div>
+              <span>Shopping Cart </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-checkout my-5">
+        <div class="container">
+          <h2>Shopping Cart</h2>
+          <div class="row gx-5">
+            <div class="col-8">
+              <div
+                class="d-flex justify-content-between align-items-center pt-4 fs-5 fw-bolder"
+              >
+                <p>Product</p>
+                <div class="d-flex align-items-center text-center gap-4">
+                  <p class="pe-5">Price</p>
+                  <p class="pe-5">Quantity</p>
+                  <p class="pe-5">Total</p>
+                </div>
+              </div>
+
+              <div
+                class="col-12 border-top py-3 mt-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="cancel-btn-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="cart-cover-checkout">
+                    <img src="../public/assets/img/chair1.jpg" alt="" />
+                  </div>
+                  <div class="cart-content-text">
+                    <p class="mb-0 mt-3 fw-bolder">Fresh-whole-fish</p>
+                    <p class="my-2">COLOR: Blue</p>
+                    <p>WEIGHT: 2 Kg</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <p class="mb-0 me-5">$65.00</p>
+                  <div class="counter-container me-5">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn increase">+</button>
+                  </div>
+                  <p class="mb-0 me-4 pe-3">$130.00</p>
+                </div>
+              </div>
+              <div
+                class="col-12 border-top py-3 mt-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="cancel-btn-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="cart-cover-checkout">
+                    <img src="../public/assets/img/chair1.jpg" alt="" />
+                  </div>
+                  <div class="cart-content-text">
+                    <p class="mb-0 mt-3 fw-bolder">Fresh-whole-fish</p>
+                    <p class="my-2">COLOR: Blue</p>
+                    <p>WEIGHT: 2 Kg</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <p class="mb-0 me-5">$65.00</p>
+                  <div class="counter-container me-5">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn increase">+</button>
+                  </div>
+                  <p class="mb-0 me-4 pe-3">$130.00</p>
+                </div>
+              </div>
+              <div
+                class="col-12 border-top py-3 mt-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="cancel-btn-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="cart-cover-checkout">
+                    <img src="../public/assets/img/chair1.jpg" alt="" />
+                  </div>
+                  <div class="cart-content-text">
+                    <p class="mb-0 mt-3 fw-bolder">Fresh-whole-fish</p>
+                    <p class="my-2">COLOR: Blue</p>
+                    <p>WEIGHT: 2 Kg</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <p class="mb-0 me-5">$65.00</p>
+                  <div class="counter-container me-5">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn increase">+</button>
+                  </div>
+                  <p class="mb-0 me-4 pe-3">$130.00</p>
+                </div>
+              </div>
+              <div
+                class="col-12 border-top py-3 mt-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="cancel-btn-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="cart-cover-checkout">
+                    <img src="../public/assets/img/chair1.jpg" alt="" />
+                  </div>
+                  <div class="cart-content-text">
+                    <p class="mb-0 mt-3 fw-bolder">Fresh-whole-fish</p>
+                    <p class="my-2">COLOR: Blue</p>
+                    <p>WEIGHT: 2 Kg</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <p class="mb-0 me-5">$65.00</p>
+                  <div class="counter-container me-5">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn increase">+</button>
+                  </div>
+                  <p class="mb-0 me-4 pe-3">$130.00</p>
+                </div>
+              </div>
+              <div
+                class="col-12 border-top border-bottom py-3 mt-2 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="cancel-btn-cart">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div class="cart-cover-checkout">
+                    <img src="../public/assets/img/chair1.jpg" alt="" />
+                  </div>
+                  <div class="cart-content-text">
+                    <p class="mb-0 mt-3 fw-bolder">Fresh-whole-fish</p>
+                    <p class="my-2">COLOR: Blue</p>
+                    <p>WEIGHT: 2 Kg</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <p class="mb-0 me-5">$65.00</p>
+                  <div class="counter-container me-5">
+                    <button class="counter-btn decrease">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn increase">+</button>
+                  </div>
+                  <p class="mb-0 me-4 pe-3">$130.00</p>
+                </div>
+              </div>
+              <div
+                class="my-3 d-flex align-items-center justify-content-between"
+              >
+                <a
+                  href="#"
+                  class="btn text-decoration-none text-danger fw-bolder"
+                  type="btn"
+                  >Continue shopping</a
+                >
+                <a
+                  href="#"
+                  class="btn text-decoration-none text-danger fw-bolder"
+                  type="btn"
+                  >Clear Cart
+                </a>
+              </div>
+            </div>
+            <div class="col-4 p-3 mt-4">
+              <p class="mb-0 fw-bold fs-5">Coupon</p>
+              <div>
+                <p class="py-3 mb-0 text-body-secondary">
+                  Enter your coupon code if you have one.
+                </p>
+              </div>
+              <div class="d-flex align-items-center redeme-coupon mb-3">
+                <input
+                  type="text"
+                  class="px-1 py-2 border-light-subtle rounded-2 border-start border-top"
+                  placeholder="Coupon code"
+                />
+                <button type="submit" class="btn ms-3">Apply Coupon</button>
+              </div>
+              <p class="mb-0 fw-bold fs-5 pt-1">Note</p>
+              <div>
+                <p class="py-3 mb-0 text-body-secondary">
+                  Add special instructions for your seller...
+                </p>
+              </div>
+              <div class="text-area-cart">
+                <textarea class="w-100 px-1 py-2"></textarea>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-4"
+              >
+                <p class="mb-0">SUBTOTAL</p>
+                <span>$860.00 </span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <p class="mb-0">GRAND TOTAL</p>
+                <span>$860.00 </span>
+              </div>
+              <p class="mt-4 text-body-secondary">
+                Shipping & taxes calculated at checkout
+              </p>
+              <div
+                class="d-flex justify-content-between add-check-btn-cart pt-2 align-items-center"
+              >
+                <button type="submit" class="btn">Update Cart</button>
+                <button type="submit" class="btn">Check Out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-product-cart-checkout pb-4 my-5 pt-5">
+        <div class="container">
+          <h1 class="text-center">New Products</h1>
+          <div class="position-relative mt-4">
+            <div class="swiper6 mySwiper6 overflow-hidden px-1">
+              <div class=" swiper-wrapper6 mt-4 d-flex justify-content-between align-items-center">
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair3.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair4.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair5.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair3.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair4.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto swiper-slide6">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="../public/assets/img/chair5.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="product-color d-flex justify-content-center">
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                        <div class="product-color-customize"></div>
+                      </div>
+                      <a href="#">
+                        <h5 class="text-center my-3">Fashion Plastic Chair</h5>
+                      </a>
+                      <div class="price text-center fw-bolder">
+                        <p class="text-danger">
+                          $150.00<span
+                            class="ps-2 text-decoration-line-through text-body-tertiary"
+                          >
+                            $200.00</span
+                          >
+                        </p>
+                      </div>
+                      <div class="text-center cart-btn">
+                        <a
+                          href="#"
+                          type="button"
+                          class="btn btn-danger text-white"
+                        >
+                          <i class="fa-solid fa-bag-shopping"></i> Add to
+                          cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gx-3 pt-5">
+          <div class="col-3">
+            <div class="logo-footer">
+              <h2>LOGO</h2>
+            </div>
+            <div class="company-desc-footer py-3">
+              <p class="text-body-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                inventore itaque quas aperiam placeat harum culpa nobis, quod
+                expedita? Adipisci!
+              </p>
+            </div>
+            <div class="social-footer d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"> <i class="fa-brands fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div>
+              <h4>Quick Links</h4>
+            </div>
+            <div class="quick-link-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Frequently</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div>
+              <h4>Account Info</h4>
+            </div>
+            <div class="account-info-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >My Account</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Shopping Cart</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Checkout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div>
+              <h4>Newsletter</h4>
+            </div>
+            <div class="newletter-desc-footer py-3">
+              <p class="text-body-secondary">
+                Get updates by subscribe our weekly newsletter
+              </p>
+            </div>
+            <div class="new-letter-footer-form">
+              <form class="d-flex justify-content-between">
+                <input type="text" id="" />
+                <button type="submit">
+                  Subscribe<i class="fa-solid fa-paper-plane ps-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="py-2 text-body-secondary">
+          <p>
+            Copyright © 2025 <span class="fw-bolder">Kimlong</span> . All Rights
+            Reserved.Design By <span class="fw-bolder">Kimlong</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../public/assets/js/cart.js"></script>
+  </body>
+</html>
