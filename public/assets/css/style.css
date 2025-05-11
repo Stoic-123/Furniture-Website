@@ -992,6 +992,9 @@ footer .new-letter-footer-form form input:focus {
   padding: 10px 20px;
   border-radius: 6px;
 }
+ .first-child-shop-col-9-p{
+    font-size: 17px !important;
+  }
 .shop-section .first-child-shop-col-9 .first-child-shop-col-9-item select {
   padding: 10px 15px;
   border-radius: 6px;
@@ -1871,5 +1874,8 @@ footer .new-letter-footer-form form input:focus {
     object-fit: cover;
     margin-right: 20px;
     object-position: center;
+  }
+  .first-child-shop-col-9-p{
+    font-size: 14px !important;
   }
 }
