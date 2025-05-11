@@ -1696,7 +1696,7 @@ footer .new-letter-footer-form form input:focus {
 .bottom-nav ul {
   margin: auto;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
