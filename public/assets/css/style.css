@@ -992,9 +992,9 @@ footer .new-letter-footer-form form input:focus {
   padding: 10px 20px;
   border-radius: 6px;
 }
- .first-child-shop-col-9-p{
-    font-size: 17px !important;
-  }
+.first-child-shop-col-9-p {
+  font-size: 17px !important;
+}
 .shop-section .first-child-shop-col-9 .first-child-shop-col-9-item select {
   padding: 10px 15px;
   border-radius: 6px;
@@ -1044,6 +1044,10 @@ footer .new-letter-footer-form form input:focus {
 }
 .shop-section .tab-shop-content .card .pro-name-shop-list {
   transition: 0.2s ease-in-out;
+  font-size: 20px;
+}
+.price-shop-list {
+  font-size: 17px;
 }
 .shop-section .tab-shop-content .card .pro-name-shop-list:hover {
   color: tomato !important;
@@ -1107,7 +1111,10 @@ footer .new-letter-footer-form form input:focus {
   padding: 0 4px;
   color: orange;
 }
-.tab-shop-content .product-list-col-wrapper-item .col-md-4 .star-rate-amount-shop {
+.tab-shop-content
+  .product-list-col-wrapper-item
+  .col-md-4
+  .star-rate-amount-shop {
   font-size: 14px;
 }
 .tab-shop-content
@@ -1868,14 +1875,25 @@ footer .new-letter-footer-form form input:focus {
   .new-product .row .col-12 {
     padding: 0px !important;
   }
-  .product-list-col-cover img{
+  .product-list-col-cover img {
     width: 100% !important;
     height: 150px !important;
     object-fit: cover;
     margin-right: 20px;
     object-position: center;
   }
-  .first-child-shop-col-9-p{
+  .first-child-shop-col-9-p {
     font-size: 14px !important;
+  }
+  .pro-name-shop-list {
+    font-size: 17px !important;
+  }
+  .shop-section .tab-shop-content .card .add-cart-btn-shop-list a {
+    font-size: 15px;
+    padding: 3px 14px;
+    opacity: 1;
+  }
+  .price-shop-list {
+    font-size: 14px;
   }
 }
