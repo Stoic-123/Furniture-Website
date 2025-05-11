@@ -32,7 +32,7 @@
   top: 30%;
   color: white;
   z-index: 2;
-  right: 10% !important;
+  right: 8% !important;
 }
 .slide-content.animate h2,
 .slide-content.animate p,
@@ -132,7 +132,7 @@
 .product .row .col-md-6 {
   height: auto;
   border-radius: 2px;
-  overflow: hidden;
+  padding: 0 10px !important;
   cursor: pointer;
 }
 .product .row a {
@@ -1082,7 +1082,7 @@ footer .new-letter-footer-form form input:focus {
   overflow: hidden;
   border: 1px solid rgb(210, 210, 210);
 }
-.tab-shop-content .product-list-col-wrapper-item .col-8 {
+.tab-shop-content .product-list-col-wrapper-item .col-md-8 {
   padding: 15px;
   padding-left: 28px;
 }
@@ -1095,21 +1095,21 @@ footer .new-letter-footer-form form input:focus {
 .tab-shop-content .product-list-col-wrapper-item .product-list-col-cover img {
   width: 250px;
 }
-.tab-shop-content .product-list-col-wrapper-item .col-4 h4 {
+.tab-shop-content .product-list-col-wrapper-item .col-md-4 h4 {
   color: tomato;
   margin-bottom: 10px;
 }
-.tab-shop-content .product-list-col-wrapper-item .col-4 i {
+.tab-shop-content .product-list-col-wrapper-item .col-md-4 i {
   font-size: 11px;
   padding: 0 4px;
   color: orange;
 }
-.tab-shop-content .product-list-col-wrapper-item .col-4 .star-rate-amount-shop {
+.tab-shop-content .product-list-col-wrapper-item .col-md-4 .star-rate-amount-shop {
   font-size: 14px;
 }
 .tab-shop-content
   .product-list-col-wrapper-item
-  .col-4
+  .col-md-4
   .product-list-col-btn-add-cart
   a {
   border: 1px solid tomato;
@@ -1119,7 +1119,7 @@ footer .new-letter-footer-form form input:focus {
 }
 .tab-shop-content
   .product-list-col-wrapper-item
-  .col-4
+  .col-md-4
   .product-list-col-btn-add-cart
   a:hover {
   border: 1px solid transparent;
@@ -1128,7 +1128,7 @@ footer .new-letter-footer-form form input:focus {
 }
 .tab-shop-content
   .product-list-col-wrapper-item
-  .col-4
+  .col-md-4
   .product-list-col-btn-add-cart
   a:hover
   i {
@@ -1136,7 +1136,7 @@ footer .new-letter-footer-form form input:focus {
 }
 .tab-shop-content
   .product-list-col-wrapper-item
-  .col-4
+  .col-md-4
   .product-list-col-btn-add-cart
   a
   > i {
@@ -1708,9 +1708,9 @@ footer .new-letter-footer-form form input:focus {
   text-decoration: none;
   color: #000000;
 }
-.bottom-nav ul li a label{
- font-size: 12px;
- margin-top: 5px;
+.bottom-nav ul li a label {
+  font-size: 12px;
+  margin-top: 5px;
 }
 @media only screen and (max-width: 576px) {
   .new-product .new-product-line {
@@ -1772,7 +1772,7 @@ footer .new-letter-footer-form form input:focus {
   }
   .new-product .count-order-btn {
     left: 50%;
-    top: 30%;
+    top: 38%;
   }
   .new-product .col-12 h4 {
     color: tomato;
@@ -1852,5 +1852,24 @@ footer .new-letter-footer-form form input:focus {
   .latest-blog .swiper3 .swiper-button-next::after {
     font-size: 20px;
     padding: 10px 15px;
+  }
+  .product .row {
+    padding: 0 13px !important;
+  }
+  .order-product .row {
+    padding: 0 13px !important;
+  }
+  .new-product .row {
+    padding: 0 13px !important;
+  }
+  .new-product .row .col-12 {
+    padding: 0px !important;
+  }
+  .product-list-col-cover img{
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover;
+    margin-right: 20px;
+    object-position: center;
   }
 }
