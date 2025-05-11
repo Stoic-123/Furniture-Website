@@ -1685,7 +1685,7 @@ footer .new-letter-footer-form form input:focus {
 }
 .bottom-nav ul li {
   list-style: none;
-  padding: 15px 20px;
+  padding: 15px 0px;
 }
 .bottom-nav ul li a i {
   background-color: tomato;
@@ -1696,7 +1696,7 @@ footer .new-letter-footer-form form input:focus {
 .bottom-nav ul {
   margin: auto;
   width: 100%;
-  padding: 0;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
