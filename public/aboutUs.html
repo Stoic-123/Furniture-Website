@@ -1,13 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-lg-flex align-items-center justify-content-between"
+            >
+              <ul
+                class="navbar-nav gap-5 align-items-center justify-content-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactUs.html">Contact</a>
+                </li>
+              </ul>
+              <div class="fs-5 d-none d-lg-block">
+                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
+                <i class="pe-4 fa-regular fa-user"></i>
+                <i class="pe-4 fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-about my-5 position-relative">
+        <div class="hero-about-overlay z-1 position-absolute"></div>
+        <div class="container h-100">
+          <div
+            class="h-100 position-relative text-white z-3 d-flex flex-column justify-content-center"
+          >
+            <h1 class="fw-bolder">About Us</h1>
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-white" href="index.html"
+                >Home</a
+              >
+              <div class="decor-about-hero"></div>
+              <span>About Us</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 my-lg-5 py-lg-5 first-about-section">
+        <div class="container">
+          <div class="row gx-4">
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class="col-6 pt-lg-5 mt-lg-5">
+                  <img
+                    class="img-first-sec-about"
+                    src="assets/img/chair1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    class="img-first-sec-about"
+                    src="assets/img/chair9.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div>
+                <h5 class="text-danger mt-5 mt-lg-0">Why Choose us</h5>
+                <h2 class="py-4">
+                  We do not buy from the open market & traders.
+                </h2>
+                <p class="text-body-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  illo, est repellendus are quia voluptate neque reiciendis ea
+                  placeat labore maiores cum, hic ducimus ad a dolorem soluta
+                  consectetur adipisci. Perspiciatis quas ab quibusdam is.
+                </p>
+                <p class="pt-4 mb-0 text-body-secondary">
+                  Itaque accusantium eveniet a laboriosam dolorem? Magni
+                  suscipit est corrupti explicabo non perspiciatis, excepturi ut
+                  asperiores assumenda rerum? Provident ab corrupti sequi,
+                  voluptates repudiandae eius odit aut.
+                </p>
+                <div class="d-flex mt-2 align-items-center">
+                  <div class="pe-4">
+                    <h5>Ieng kimlong</h5>
+                    <p class="m-0">Full-Stack Developer</p>
+                  </div>
+                  <img
+                    class="signature_ceo"
+                    src="assets/img/kimlong_signature.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-about-section mb-5">
+        <div class="second-about-overlay z-1 position-absolute"></div>
+        <div class="load-number-content position-absolute z-2 w-100">
+          <div class="container w-100">
+            <div class="row w-100 gy-4">
+              <div class="text-white text-center col-6 col-lg-3">
+                <h5>
+                  YEARS OF <br />
+                  FOUNDATION
+                </h5>
+                <h1 class="number-load fw-bolder">100</h1>
+              </div>
+              <div class="text-white text-center col-6 col-lg-3">
+                <h5>
+                  SKILLED TEAM <br />
+                  MEMBERS
+                </h5>
+                <h1 class="number-load fw-bolder">168</h1>
+              </div>
+              <div class="text-white text-center col-6 col-lg-3">
+                <h5>
+                  HAPPY
+                  <br />
+                  CUSTOMERS
+                </h5>
+                <h1 class="number-load fw-bolder">1188</h1>
+              </div>
+              <div class="text-white text-center col-6 col-lg-3">
+                <h5>
+                  MONTHLY <br />
+                  ORDERS
+                </h5>
+                <h1 class="number-load fw-bolder">999</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-5 third-about-section">
+        <div class="container">
+          <h1 class="text-center mb-5">Our Teams</h1>
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <div class="ceo-cover-wrapper mx-auto">
+                  <img
+                    src="assets/img/kimlong.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <div class="name-ceo">
+                    <h3>Ieng kimlong</h3>
+                  </div>
+                  <div class="position-ceo">
+                    <p class="text-body-secondary">Full-Stack Developer</p>
+                  </div>
+                  <div class="ceo-socail">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <div class="ceo-cover-wrapper mx-auto">
+                  <img
+                    src="assets/img/kimlong.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <div class="name-ceo">
+                    <h3>Ieng kimlong</h3>
+                  </div>
+                  <div class="position-ceo">
+                    <p class="text-body-secondary">Full-Stack Developer</p>
+                  </div>
+                  <div class="ceo-socail">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <div class="ceo-cover-wrapper mx-auto">
+                  <img
+                    src="assets/img/kimlong.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <div class="name-ceo">
+                    <h3>Ieng kimlong</h3>
+                  </div>
+                  <div class="position-ceo">
+                    <p class="text-body-secondary">Full-Stack Developer</p>
+                  </div>
+                  <div class="ceo-socail">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <div class="ceo-cover-wrapper mx-auto">
+                  <img
+                    src="assets/img/kimlong.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <div class="name-ceo">
+                    <h3>Ieng kimlong</h3>
+                  </div>
+                  <div class="position-ceo">
+                    <p class="text-body-secondary">Full-Stack Developer</p>
+                  </div>
+                  <div class="ceo-socail">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourt-about-section py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="pb-5 text-center">What Say Our Top Clints</h1>
+              <div class="swiper8 w-100 mySwiper8 overflow-hidden">
+                <div class="swiper-wrapper8 d-flex justify-content-start">
+                  <div class="swiper-slide8 col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div
+                          class="feed-back-about-card-header d-flex align-items-center"
+                        >
+                          <img src="assets/img/kimlong.jpg" alt="" />
+                          <div class="text-start ms-3">
+                            <h5>Ieng kimlong</h5>
+                            <p class="mt-0 pt-0">Full-Stack Developer</p>
+                            <div class="feedback-star d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="feedback-about-content text-start fs-2 text-body-tertiary"
+                        >
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>
+                            Mum ut perspiciatis unde omnis iste natus ganu error
+                            sit voluptatem accusan tium gyauey aykua doloremque
+                            sdggsuj jjsiaalji aialadju auoa.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide8 col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div
+                          class="feed-back-about-card-header d-flex align-items-center"
+                        >
+                          <img src="assets/img/kimlong.jpg" alt="" />
+                          <div class="text-start ms-3">
+                            <h5>Ieng kimlong</h5>
+                            <p class="mt-0 pt-0">Full-Stack Developer</p>
+                            <div class="feedback-star d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="feedback-about-content text-start fs-2 text-body-tertiary"
+                        >
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>
+                            Mum ut perspiciatis unde omnis iste natus ganu error
+                            sit voluptatem accusan tium gyauey aykua doloremque
+                            sdggsuj jjsiaalji aialadju auoa.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide8 col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div
+                          class="feed-back-about-card-header d-flex align-items-center"
+                        >
+                          <img src="assets/img/kimlong.jpg" alt="" />
+                          <div class="text-start ms-3">
+                            <h5>Ieng kimlong</h5>
+                            <p class="mt-0 pt-0">Full-Stack Developer</p>
+                            <div class="feedback-star d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="feedback-about-content text-start fs-2 text-body-tertiary"
+                        >
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>
+                            Mum ut perspiciatis unde omnis iste natus ganu error
+                            sit voluptatem accusan tium gyauey aykua doloremque
+                            sdggsuj jjsiaalji aialadju auoa.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide8 col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div
+                          class="feed-back-about-card-header d-flex align-items-center"
+                        >
+                          <img src="assets/img/kimlong.jpg" alt="" />
+                          <div class="text-start ms-3">
+                            <h5>Ieng kimlong</h5>
+                            <p class="mt-0 pt-0">Full-Stack Developer</p>
+                            <div class="feedback-star d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="feedback-about-content text-start fs-2 text-body-tertiary"
+                        >
+                          <i class="fa-solid fa-quote-left"></i>
+                          <p>
+                            Mum ut perspiciatis unde omnis iste natus ganu error
+                            sit voluptatem accusan tium gyauey aykua doloremque
+                            sdggsuj jjsiaalji aialadju auoa.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination8 text-center my-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-nav d-lg-none">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user"></i><label>Home</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-shop"></i><label>Shop</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+                ><label>Search</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-bag-shopping"></i><label>Cart</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-heart"></i><label>Wishlist</label></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gx-3 pt-5">
+          <div class="col-12 mb-3 mb-md-0 col-md-6 col-lg-3">
+            <div class="logo-footer">
+              <h2>LOGO</h2>
+            </div>
+            <div class="company-desc-footer py-3">
+              <p class="text-body-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                inventore itaque quas aperiam placeat harum culpa nobis, quod
+                expedita? Adipisci!
+              </p>
+            </div>
+            <div class="social-footer d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"> <i class="fa-brands fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Quick Links</h4>
+            </div>
+            <div class="quick-link-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="wishlist.html"
+                    >Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Frequently</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Account Info</h4>
+            </div>
+            <div class="account-info-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >My Account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="cart.html"
+                    >Shopping Cart</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Checkout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Newsletter</h4>
+            </div>
+            <div class="newletter-desc-footer py-3">
+              <p class="text-body-secondary">
+                Get updates by subscribe our weekly newsletter
+              </p>
+            </div>
+            <div class="new-letter-footer-form">
+              <form class="d-flex justify-content-between">
+                <input type="text" id="" />
+                <button type="submit">
+                  Subscribe<i class="fa-solid fa-paper-plane ps-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="py-2 text-body-secondary">
+          <p>
+            Copyright © 2025 <span class="fw-bolder">Kimlong</span> . All Rights
+            Reserved.Design By <span class="fw-bolder">Kimlong</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/aboutUs.js"></script>
+  </body>
 </html>
-
-

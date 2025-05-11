@@ -1694,6 +1694,7 @@ footer .new-letter-footer-form form input:focus {
   bottom: 0%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    z-index: 99;
 }
 .bottom-nav ul li {
   list-style: none;
@@ -1811,6 +1812,141 @@ footer .new-letter-footer-form form input:focus {
   color: white;
 }
 /* ==================== End Contact Us page ======================= */
+/* ==================== About Us page ======================= */
+.hero-about {
+  background-image: url(../img/product-detail-hero-bg.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.hero-about .hero-about-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.hero-about .decor-about-hero {
+  width: 20px;
+  background-color: rgb(191, 247, 247);
+  height: 2px;
+  margin: 0 15px;
+}
+.first-about-section .row .col-12 .col-6 .img-first-sec-about {
+  width: 100%;
+  height: 400px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.signature_ceo {
+  width: 110px;
+}
+.second-about-section {
+  background-image: url(../img/about-bg.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.second-about-section .second-about-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.second-about-section .load-number-content {
+  top: 38%;
+}
+.third-about-section .row .col-6 .card {
+  padding: 20px 0px;
+  border: none;
+}
+.third-about-section .row .col-6 .card img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.third-about-section .row .col-6 .card .ceo-cover-wrapper {
+  border-radius: 50%;
+  width: 235px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  outline: 5px solid transparent;
+}
+.third-about-section .row .col-6 .card .ceo-cover-wrapper:hover {
+  outline: 5px solid tomato;
+}
+.third-about-section .row .col-6 .card .position-ceo {
+  font-size: 17px;
+}
+.third-about-section .row .col-6 .card .ceo-socail {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.third-about-section .row .col-6 .card .ceo-socail a i {
+  font-size: 13px !important;
+}
+.third-about-section .row .col-6 .card .ceo-socail a {
+  border-radius: 50%;
+  padding: 7px 14px;
+  color: white;
+  background-color: tomato;
+  transition: 0.2s ease-in-out;
+}
+.third-about-section .row .col-6 .card .ceo-socail a:hover {
+  color: white;
+  background-color: darkslategray;
+}
+
+
+.feedback-product .col-md-6 img {
+  width: 100%;
+}
+.swiper8 {
+  width: 100% !important;
+  height: 100%;
+}
+
+.swiper-slide8 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.fourt-about-section .feed-back-about-card-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.fourt-about-section .swiper-slide2 .card {
+  width: 303px !important;
+  border: none;
+}
+.fourt-about-section .feed-back-about-card-header .feedback-star i {
+  color: rgb(189, 189, 20);
+  font-size: 13px;
+}
+
+.fourt-about-section .feed-back-about-card-header h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.fourt-about-section .feed-back-about-card-header p {
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(137, 134, 134);
+}
+.fourt-about-section .feedback-about-content p {
+  font-size: 16px;
+}
+
+/* ==================== End About Us page ======================= */
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
     object-fit: cover;
@@ -2042,4 +2178,33 @@ footer .new-letter-footer-form form input:focus {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
+  .second-about-section .load-number-content {
+    top: 27% !important;
+  }
+  .first-about-section .row .col-12 .col-6 .img-first-sec-about {
+    width: 100%;
+    height: 280px;
+  }
+  .third-about-section .row .col-6 .card .ceo-cover-wrapper {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+  }
+  .third-about-section .row .col-6 .card .ceo-socail a i {
+  font-size: 11px !important;
+}
+.third-about-section .row .col-6 .card .ceo-socail a {
+  border-radius: 50%;
+  padding: 4px 11px;
+  color: white;
+  background-color: tomato;
+  transition: 0.2s ease-in-out;
+}
+.third-about-section .name-ceo h3{
+  font-size: 16px;
+}
+.third-about-section .position-ceo p{
+  font-size: 12px;
+}
 }
