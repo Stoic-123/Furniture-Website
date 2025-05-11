@@ -1799,14 +1799,14 @@ footer .new-letter-footer-form form input:focus {
 .check-contact:checked {
   background-color: tomato !important;
 }
-.btn-sub-contact button{
+.btn-sub-contact button {
   background-color: tomato;
   color: white;
   padding: 10px 0;
   border-radius: 3px !important;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-.btn-sub-contact button:hover{
+.btn-sub-contact button:hover {
   background-color: darkslategray;
   color: white;
 }
@@ -1907,6 +1907,9 @@ footer .new-letter-footer-form form input:focus {
   }
   .popular-product .row .card .cart-btn {
     opacity: 1;
+  }
+  .popular-product .row .card .cart-btn a {
+    font-size: 12px !important;
   }
   .new-product .col-md-8 .col-md-4 .card .card-body .cart-btn-new-pro {
     left: 5%;
