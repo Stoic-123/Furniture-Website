@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 /* ============== Hero section Home ====================== */
 .main {
@@ -1723,6 +1724,93 @@ footer .new-letter-footer-form form input:focus {
   font-size: 12px;
   margin-top: 5px;
 }
+/* ==================== Contact Us page ======================= */
+.hero-contact {
+  background-image: url(../img/product-detail-hero-bg.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.hero-contact .hero-contact-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.hero-contact .decor-contact-hero {
+  width: 20px;
+  background-color: rgb(191, 247, 247);
+  height: 2px;
+  margin: 0 15px;
+}
+
+.contact-content .row .first-col-contact i {
+  font-size: 29px;
+}
+.contact-content .row .first-col-contact .link-contact {
+  transition: 0.2s ease-in-out;
+}
+.contact-content .row .first-col-contact .link-contact:hover {
+  color: darkslategray !important;
+}
+.contact-socail ul {
+  margin-left: -40px;
+}
+.contact-socail ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+.contact-socail ul li a:hover {
+  color: darkslategray;
+}
+.contact-socail ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.second-col-contact {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.second-col-contact input {
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  padding: 12px 8px;
+}
+.second-col-contact textarea {
+  transition: 0.2s ease-in-out;
+  resize: none;
+  padding: 14px 8px;
+  height: 150px;
+}
+.second-col-contact input:focus {
+  box-shadow: rgba(246, 14, 14, 0.2) 0px 2px 8px 0px;
+  border: 1px solid tomato;
+}
+.second-col-contact textarea:focus {
+  box-shadow: rgba(246, 14, 14, 0.2) 0px 2px 8px 0px;
+  border: 1px solid tomato;
+}
+.check-contact {
+  margin-left: 5px;
+  transform: scale(1.5); /* increase to 1.5x size */
+  margin-right: 10px; /* optional spacing */
+  cursor: pointer;
+}
+.check-contact:checked {
+  background-color: tomato !important;
+}
+.btn-sub-contact button{
+  background-color: tomato;
+  color: white;
+  padding: 10px 0;
+  border-radius: 3px !important;
+  transition: .2s ease-in-out;
+}
+.btn-sub-contact button:hover{
+  background-color: darkslategray;
+  color: white;
+}
+/* ==================== End Contact Us page ======================= */
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
     object-fit: cover;
@@ -1731,7 +1819,7 @@ footer .new-letter-footer-form form input:focus {
     width: 100%;
     object-position: center;
   }
-   .swiper .swiper-slide {
+  .swiper .swiper-slide {
     object-fit: cover;
     display: block;
     height: 590px;
@@ -1744,7 +1832,7 @@ footer .new-letter-footer-form form input:focus {
   .hero-section .swiper .swiper-button-next {
     display: none;
   }
-   .product .row .col-md-6 img {
+  .product .row .col-md-6 img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -1765,7 +1853,7 @@ footer .new-letter-footer-form form input:focus {
   .popular-product .row .card img {
     width: 100% !important;
   }
-  .order-product .row .col-12 img{
+  .order-product .row .col-12 img {
     width: 200px !important;
   }
 }
