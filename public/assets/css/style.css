@@ -2321,4 +2321,7 @@ footer .new-letter-footer-form form input:focus {
   .third-about-section .position-ceo p {
     font-size: 12px;
   }
+  .related-tag li a{
+    font-size: 12px;
+  }
 }
