@@ -1694,7 +1694,7 @@ footer .new-letter-footer-form form input:focus {
   bottom: 0%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    z-index: 99;
+  z-index: 99;
 }
 .bottom-nav ul li {
   list-style: none;
@@ -1905,7 +1905,6 @@ footer .new-letter-footer-form form input:focus {
   background-color: darkslategray;
 }
 
-
 .feedback-product .col-md-6 img {
   width: 100%;
 }
@@ -1947,6 +1946,121 @@ footer .new-letter-footer-form form input:focus {
 }
 
 /* ==================== End About Us page ======================= */
+/* ====================  Blog Detail page ======================= */
+
+.blogDetail-section .blog-detail-img img {
+  height: 550px;
+  object-position: center;
+}
+.box-blog-detail {
+  width: 90%;
+  background-color: #f7f8fc;
+}
+.box-blog-detail h5 {
+  line-height: 34px;
+}
+.related-tag-blog li {
+  padding: 0px 6px;
+}
+.related-tag-blog li a {
+  padding: 8px 12px;
+  border: 1px solid rgb(208, 208, 208);
+  transition: 0.2s ease-in-out;
+  border-radius: 3px;
+}
+.related-tag-blog li a:hover {
+  background-color: darkslategray;
+  color: white !important;
+  border: 1px solid transparent;
+}
+.blog-social a i {
+  font-size: 13px !important;
+}
+.blog-social a {
+  border-radius: 50%;
+  padding: 8px 14px;
+  color: white;
+  background-color: tomato;
+  transition: 0.2s ease-in-out;
+}
+.related-blog-card .row .col-12 .card {
+  border: none;
+}
+.related-blog-card .row .col-12 .card:hover img {
+  transform: scale(1.1);
+}
+.related-blog-card .row .col-12 .card .blog-related-img {
+  width: 100%;
+  height: 330px;
+}
+.related-blog-card .row .col-12 .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+.related-blog-card .row .col-12 .card .blog-text-related {
+  margin-left: -10px;
+}
+.related-blog-card .row .col-12 .card .blog-text-related a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.related-blog-card .row .col-12 .card .blog-text-related a:hover {
+  color: tomato;
+}
+.comment-blog img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+}
+.comment-blog button {
+  height: 40px;
+  width: 90px;
+  border-radius: 6px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+.comment-blog button:hover {
+  background-color: darkslategray;
+}
+.blog-comments input{
+  transition: .2s ease-in-out;
+  padding: 13px 8px;
+}
+.blog-comments textarea{
+  resize: none;
+  height: 140px;
+}
+.blog-comments input:focus{
+  border: 1px solid tomato ;
+  outline: none;
+  box-shadow: rgba(255, 31, 31, 0.2) 0px 2px 8px 0px;
+}
+.blog-comments textarea:focus{
+  border: 1px solid tomato ;
+  outline: none;
+  box-shadow: rgba(255, 31, 31, 0.2) 0px 2px 8px 0px;
+}
+.blog-comments form button{
+  border: none;
+  padding: 13px 26px;
+  border-radius: 3px;
+  background-color: tomato;
+  color: white;
+  margin-top: 5px;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+}
+.blog-comments form button:hover{
+  background-color: darkslategray;
+}
+/* ==================== End  Blog Detail page ======================= */
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
     object-fit: cover;
@@ -2192,19 +2306,19 @@ footer .new-letter-footer-form form input:focus {
     padding: 5px;
   }
   .third-about-section .row .col-6 .card .ceo-socail a i {
-  font-size: 11px !important;
-}
-.third-about-section .row .col-6 .card .ceo-socail a {
-  border-radius: 50%;
-  padding: 4px 11px;
-  color: white;
-  background-color: tomato;
-  transition: 0.2s ease-in-out;
-}
-.third-about-section .name-ceo h3{
-  font-size: 16px;
-}
-.third-about-section .position-ceo p{
-  font-size: 12px;
-}
+    font-size: 11px !important;
+  }
+  .third-about-section .row .col-6 .card .ceo-socail a {
+    border-radius: 50%;
+    padding: 4px 11px;
+    color: white;
+    background-color: tomato;
+    transition: 0.2s ease-in-out;
+  }
+  .third-about-section .name-ceo h3 {
+    font-size: 16px;
+  }
+  .third-about-section .position-ceo p {
+    font-size: 12px;
+  }
 }
