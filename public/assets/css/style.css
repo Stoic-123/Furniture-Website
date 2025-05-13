@@ -2029,25 +2029,25 @@ footer .new-letter-footer-form form input:focus {
 .comment-blog button:hover {
   background-color: darkslategray;
 }
-.blog-comments input{
-  transition: .2s ease-in-out;
+.blog-comments input {
+  transition: 0.2s ease-in-out;
   padding: 13px 8px;
 }
-.blog-comments textarea{
+.blog-comments textarea {
   resize: none;
   height: 140px;
 }
-.blog-comments input:focus{
-  border: 1px solid tomato ;
+.blog-comments input:focus {
+  border: 1px solid tomato;
   outline: none;
   box-shadow: rgba(255, 31, 31, 0.2) 0px 2px 8px 0px;
 }
-.blog-comments textarea:focus{
-  border: 1px solid tomato ;
+.blog-comments textarea:focus {
+  border: 1px solid tomato;
   outline: none;
   box-shadow: rgba(255, 31, 31, 0.2) 0px 2px 8px 0px;
 }
-.blog-comments form button{
+.blog-comments form button {
   border: none;
   padding: 13px 26px;
   border-radius: 3px;
@@ -2055,12 +2055,84 @@ footer .new-letter-footer-form form input:focus {
   color: white;
   margin-top: 5px;
   font-weight: 600;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-.blog-comments form button:hover{
+.blog-comments form button:hover {
   background-color: darkslategray;
 }
 /* ==================== End  Blog Detail page ======================= */
+/* ==================== Profile page ======================= */
+.profile-section .col-wrapper {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.profile-section .col-wrapper .first-col-ul {
+  list-style: none;
+  margin-left: -30px;
+}
+.profile-section .col-wrapper .first-col-ul li {
+  padding: 10px 0;
+}
+.profile-section .col-wrapper .first-col-ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.profile-section .col-wrapper .first-col-ul li a.active {
+  color: tomato;
+  font-weight: 600;
+}
+.profile-section .col-pro-wrapper-2 table {
+  border-collapse: collapse;
+}
+.profile-section .col-pro-wrapper-2 table tr th {
+  padding: 18px;
+}
+.profile-section .col-pro-wrapper-2 table tr td {
+  padding: 18px;
+}
+.last-profile-section .new-letter-footer-form form {
+  height: 45px;
+  background-color: white;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.last-profile-section .new-letter-footer-form form input {
+  border: none;
+}
+.last-profile-section .new-letter-footer-form form button {
+  border: none;
+  background-color: tomato;
+  font-size: 13px !important;
+  color: white;
+  padding: 10px ;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.last-profile-section .new-letter-footer-form form button i {
+  font-size: 10px;
+}
+.last-profile-section .new-letter-footer-form form input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none; /* Optional: remove shadow if any */
+}
+.profile-img-last {
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/18/08/23/home-7860106_1280.jpg");
+  height: 500px;
+  width: 100% !important;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20px;
+  padding-right: 130px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==================== End Profile page ======================= */
+
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
     object-fit: cover;
@@ -2106,8 +2178,31 @@ footer .new-letter-footer-form form input:focus {
   .order-product .row .col-12 img {
     width: 200px !important;
   }
+  .profile-section .table-wrapper-profile {
+    border: none !important;
+  }
+  .profile-img-last {
+    padding-right: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .profile-img-last button {
+    padding-right: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  .profile-section .hide-mobile {
+    display: none;
+  }
+  .profile-img-last {
+    padding-right: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .new-product .new-product-line {
     width: 210px;
@@ -2122,6 +2217,11 @@ footer .new-letter-footer-form form input:focus {
   }
   .new-product .cusomize-line-wrapper-new-product h2 {
     padding-bottom: 20px;
+  }
+  .profile-img-last {
+    padding-right: 0px;
+    text-align: center;
+    padding: 0 20px;
   }
   .product .row .col-md-6 img {
     width: 200px;
@@ -2321,7 +2421,10 @@ footer .new-letter-footer-form form input:focus {
   .third-about-section .position-ceo p {
     font-size: 12px;
   }
-  .related-tag li a{
+  .related-tag li a {
     font-size: 12px;
+  }
+  .profile-section .hide-mobile {
+    display: none;
   }
 }
