@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-lg-flex align-items-center justify-content-between"
+            >
+              <ul
+                class="navbar-nav gap-5 align-items-center justify-content-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactUs.html">Contact</a>
+                </li>
+              </ul>
+              <div class="fs-5 d-none d-lg-block">
+                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
+                <i class="pe-4 fa-regular fa-user"></i>
+                <i class="pe-4 fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-detail-product my-5 position-relative">
+        <div class="hero-pro-detail-overlay z-1 position-absolute"></div>
+        <div class="container h-100">
+          <div
+            class="h-100 position-relative text-white z-3 d-flex flex-column justify-content-center"
+          >
+            <h1 class="fw-bolder">Privacy Policy</h1>
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-white" href="index.html"
+                >Home</a
+              >
+              <div class="decor-product-detail-hero"></div>
+              <span>Privacy Policy </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-5 pt-4">
+        <div class="container">
+          <div>
+            <h4>Who we are</h4>
+            <p class="text-body-secondary mb-0 py-2 pb-3">
+              Our website address is:
+              <a class="text-decoration-none text-body-secondary" href="#"
+                >kimlong168@gmail.com</a
+              >
+            </p>
+            <h4>
+              What personal data we collect and why we collect it Comments
+            </h4>
+            <p class="py-2 mb-0 pb-3 text-body-secondary">
+              When visitors leave comments on the site we collect the data shown
+              in the comments form, and also the visitor’s IP address and
+              browser user agent string to help spam detection.
+              <br />
+              <br />
+              An anonymized string created from your email address (also called
+              a hash) may be provided to the Gravatar service to see if you are
+              using it. The Gravatar service privacy policy is available here:
+              https://automattic.com/privacy/. After approval of your comment,
+              your profile picture is visible to the public in the context of
+              your comment.
+            </p>
+            <h5>Media</h5>
+            <p class="py-2 mb-0 pb-3 text-body-secondary">
+              If you upload images to the website, you should avoid uploading
+              images with embedded location data (EXIF GPS) included. Visitors
+              to the website can download and extract any location data from
+              images on the website.
+            </p>
+            <h5>Cookies</h5>
+            <p class="py-2 pb-3 mb-0 text-body-secondary">
+              If you leave a comment on our site you may opt-in to saving your
+              name, email address and website in cookies. These are for your
+              convenience so that you do not have to fill in your details again
+              when you leave another comment. These cookies will last for one
+              year.
+              <br />
+              <br />
+              If you have an account and you log in to this site, we will set a
+              temporary cookie to determine if your browser accepts cookies.
+              This cookie contains no personal data and is discarded when you
+              close your browser.
+              <br />
+              <br />
+              When you log in, we will also set up several cookies to save your
+              login information and your screen display choices. Login cookies
+              last for two days, and screen options cookies last for a year. If
+              you select “Remember Me”, your login will persist for two weeks.
+              If you log out of your account, the login cookies will be removed.
+              <br /><br />
+              If you edit or publish an article, an additional cookie will be
+              saved in your browser. This cookie includes no personal data and
+              simply indicates the post ID of the article you just edited. It
+              expires after 1 day.
+            </p>
+            <h5>Embedded content from other websites</h5>
+            <p class="py-2 pb-3 mb-0 text-body-secondary">
+              Articles on this site may include embedded content (e.g. videos,
+              images, articles, etc.). Embedded content from other websites
+              behaves in the exact same way as if the visitor has visited the
+              other website.
+              <br /><br />
+              These websites may collect data about you, use cookies, embed
+              additional third-party tracking, and monitor your interaction with
+              that embedded content, including tracking your interaction with
+              the embedded content if you have an account and are logged in to
+              that website.
+            </p>
+            <h4>How long we retain your data</h4>
+            <p class="py-2 pb-3 mb-0 text-body-secondary">
+              If you leave a comment, the comment and its metadata are retained
+              indefinitely. This is so we can recognize and approve any
+              follow-up comments automatically instead of holding them in a
+              moderation queue.
+              <br /><br />
+              For users that register on our website (if any), we also store the
+              personal information they provide in their user profile. All users
+              can see, edit, or delete their personal information at any time
+              (except they cannot change their username). Website administrators
+              can also see and edit that information.
+            </p>
+            <h4>What rights you have over your data</h4>
+            <p class="py-2 pb-3 mb-0 text-body-secondary">
+              If you have an account on this site, or have left comments, you
+              can request to receive an exported file of the personal data we
+              hold about you, including any data you have provided to us. You
+              can also request that we erase any personal data we hold about
+              you. This does not include any data we are obliged to keep for
+              administrative, legal, or security purposes.
+            </p>
+            <h4>Where we send your data</h4>
+            <p class="py-2 pb-3 mb-0 text-body-secondary">
+              Visitor comments may be checked through an automated spam
+              detection service.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="my-5 py-5 last-profile-section">
+        <div class="container">
+          <div class="col-12 profile-img-last">
+            <div class="last-profile-child col-12 col-lg-6 text-white">
+              <p class="mb-0">Want to offer regularly ?</p>
+              <h3 class="py-3">
+                Subscribe Our Newsletter <br />
+                for Get Daily Update
+              </h3>
+              <div class="new-letter-footer-form">
+                <form class="d-flex justify-content-between">
+                  <input
+                    class="col-9"
+                    type="email"
+                    id=""
+                    placeholder="Enter your email address"
+                  />
+                  <button type="submit">
+                    Subscribe<i
+                      class="fa-solid fa-paper-plane ps-2 d-none d-lg-block"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-nav d-lg-none">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user"></i><label>Home</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-shop"></i><label>Shop</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+                ><label>Search</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-bag-shopping"></i><label>Cart</label></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-heart"></i><label>Wishlist</label></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gx-3 pt-5">
+          <div class="col-12 mb-3 mb-md-0 col-md-6 col-lg-3">
+            <div class="logo-footer">
+              <h2>LOGO</h2>
+            </div>
+            <div class="company-desc-footer py-3">
+              <p class="text-body-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                inventore itaque quas aperiam placeat harum culpa nobis, quod
+                expedita? Adipisci!
+              </p>
+            </div>
+            <div class="social-footer d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"> <i class="fa-brands fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Quick Links</h4>
+            </div>
+            <div class="quick-link-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="wishlist.html"
+                    >Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Frequently</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Account Info</h4>
+            </div>
+            <div class="account-info-footer py-3">
+              <ul>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >My Account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="cart.html"
+                    >Shopping Cart</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Checkout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Newsletter</h4>
+            </div>
+            <div class="newletter-desc-footer py-3">
+              <p class="text-body-secondary">
+                Get updates by subscribe our weekly newsletter
+              </p>
+            </div>
+            <div class="new-letter-footer-form">
+              <form class="d-flex justify-content-between">
+                <input type="text" id="" />
+                <button type="submit">
+                  Subscribe<i class="fa-solid fa-paper-plane ps-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="py-2 text-body-secondary">
+          <p>
+            Copyright © 2025 <span class="fw-bolder">Kimlong</span> . All Rights
+            Reserved.Design By <span class="fw-bolder">Kimlong</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>

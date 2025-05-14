@@ -2105,7 +2105,7 @@ footer .new-letter-footer-form form input:focus {
   background-color: tomato;
   font-size: 13px !important;
   color: white;
-  padding: 10px ;
+  padding: 10px;
   display: flex;
   align-items: center;
   border-radius: 3px;
@@ -2132,6 +2132,168 @@ footer .new-letter-footer-form form input:focus {
 }
 
 /* ==================== End Profile page ======================= */
+/* ==================== Address page ======================= */
+
+.address-section .col-wrapper {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.address-section .col-wrapper .first-col-ul {
+  list-style: none;
+  margin-left: -30px;
+}
+.address-section .col-wrapper .first-col-ul li {
+  padding: 10px 0;
+}
+.address-section .col-wrapper .first-col-ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.address-section .col-wrapper .first-col-ul li a.active {
+  color: tomato;
+  font-weight: 600;
+}
+.address-section .sec-col-address .add-address-btn {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+.address-section .sec-col-address {
+  border-left: 1px solid rgb(225, 225, 225);
+}
+.address-section .sec-col-address .add-address-btn:hover {
+  background-color: darkslategray;
+}
+.address-section .sec-col-address ul {
+  margin-left: -30px;
+}
+.address-section .sec-col-address ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+.address-section .sec-col-address a {
+  padding: 10px 0;
+  color: tomato;
+  transition: 0.2s ease-in-out;
+  text-underline-offset: 8px;
+}
+.address-section .sec-col-address a:hover {
+  color: darkslategrey;
+}
+.address-section .sec-col-address .btn-action-address button {
+  color: black;
+  font-weight: normal;
+  width: 90px;
+  height: 40px;
+  border-radius: 40px;
+  line-height: 40px;
+  border: 1px solid darkslategray;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+}
+.address-section .sec-col-address .btn-action-address button:hover {
+  border: 1px solid tomato;
+  color: tomato;
+}
+/* ==================== End Address page ======================= */
+/* ==================== Auth page ======================= */
+.first-col-auth {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sec-col-auth {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sec-col-auth input {
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  padding: 12px 8px;
+}
+.sec-col-auth form a {
+  color: tomato;
+  transition: 0.2s ease-in-out;
+}
+.first-col-auth input {
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  padding: 12px 8px;
+}
+.first-col-auth form a {
+  color: tomato;
+  transition: 0.2s ease-in-out;
+}
+.first-col-auth .seperate-line-auth .first-line-auth {
+  width: 46%;
+  height: 2px;
+  background-color: rgb(224, 224, 224);
+}
+.first-col-auth .seperate-line-auth .sec-line-auth {
+  width: 46%;
+  height: 2px;
+  background-color: rgb(224, 224, 224);
+}
+.first-col-auth .socail-auth .col-4 button {
+  border: none;
+  width: 100%  !important;
+  height: 50px;
+  color: white;
+  border-radius: 3px;
+  background-color: dodgerblue;
+}
+.first-col-auth .socail-auth .col-4 .btn-auth-fb {
+  background-color: rgb(86, 97, 179) !important;
+  transition: 0.2s ease-in-out;
+}
+.first-col-auth .socail-auth .col-4 .btn-auth-fb:hover {
+  background-color: tomato !important;
+}
+.first-col-auth .socail-auth .col-4 .btn-auth-twitter {
+  transition: 0.2s ease-in-out;
+}
+.first-col-auth .socail-auth .col-4 .btn-auth-twitter:hover {
+  background-color: tomato !important;
+}
+.first-col-auth .socail-auth .col-4 .btn-auth-google {
+  background-color: tomato;
+}
+.first-col-auth form a:hover {
+  color: darkslategray;
+}
+.first-col-auth input:focus {
+  box-shadow: rgba(246, 14, 14, 0.2) 0px 2px 8px 0px;
+  border: 1px solid tomato;
+}
+.sec-col-auth form a:hover {
+  color: darkslategray;
+}
+.sec-col-auth input:focus {
+  box-shadow: rgba(246, 14, 14, 0.2) 0px 2px 8px 0px;
+  border: 1px solid tomato;
+}
+.check-contact {
+  margin-left: 5px;
+  transform: scale(1.5); /* increase to 1.5x size */
+  margin-right: 10px; /* optional spacing */
+  cursor: pointer;
+}
+.check-contact:checked {
+  background-color: tomato !important;
+}
+.btn-sub-contact button {
+  background-color: tomato;
+  color: white;
+  padding: 10px 0;
+  border-radius: 3px !important;
+  transition: 0.2s ease-in-out;
+}
+.btn-sub-contact button:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+/* ==================== End Auth page ======================= */
 
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
@@ -2190,6 +2352,10 @@ footer .new-letter-footer-form form input:focus {
     padding-right: 0px;
     text-align: center;
     padding: 0 20px;
+  }
+  .address-section .sec-col-address {
+    border-left: 1px solid transparent;
+    border-top: 1px solid rgb(225, 225, 225);
   }
 }
 
