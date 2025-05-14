@@ -2236,7 +2236,7 @@ footer .new-letter-footer-form form input:focus {
 }
 .first-col-auth .socail-auth .col-4 button {
   border: none;
-  width: 100%  !important;
+  width: 100% !important;
   height: 50px;
   color: white;
   border-radius: 3px;
@@ -2294,6 +2294,61 @@ footer .new-letter-footer-form form input:focus {
 }
 
 /* ==================== End Auth page ======================= */
+/* ==================== Faq page ======================= */
+.faq-content .shop-select-product-wrapper {
+  list-style: none;
+  margin-left: -30px;
+}
+.faq-content
+  .shop-select-product-wrapper
+  .item-select-main
+  .item-select-main-child {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 6px;
+}
+.faq-content .shop-select-product-wrapper .item-select-main {
+  cursor: pointer;
+}
+.faq-content
+  .shop-select-product-wrapper
+  .item-select-main
+  .small-selct-pro-wrapper {
+  list-style: none;
+  cursor: default;
+}
+.small-selct-pro-wrapper {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  cursor: pointer;
+}
+.small-selct-pro-wrapper.active {
+  opacity: 1;
+  max-height: 500px;
+}
+.faq-content
+  .shop-select-product-wrapper
+  .item-select-main
+  .small-selct-pro-wrapper
+  .small-item-select {
+  border: 1px solid #e0e0e0;
+  margin-left: -33px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.faq-content .drop-faq-icon {
+  width: 30px;
+  height: 30px;
+  background-color: tomato;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+/* ==================== End Faq page ======================= */
 
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
