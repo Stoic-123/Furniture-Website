@@ -2349,6 +2349,162 @@ footer .new-letter-footer-form form input:focus {
   color: white;
 }
 /* ==================== End Faq page ======================= */
+/* ==================== Portfolio page ======================= */
+.portfolio-content .item-col-portfolio img {
+  width: 100%;
+  transition: All 0.2s ease-in-out;
+}
+.portfolio-content .item-col-portfolio {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+.portfolio-content .item-col-portfolio:hover img {
+  transform: scale(1.1);
+}
+.portfolio-content .item-col-portfolio:hover .overlay-portfolio {
+  opacity: 1;
+}
+.portfolio-content .item-col-portfolio:hover .eye-icon-portfolio {
+  opacity: 1;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+}
+
+.portfolio-content .item-col-portfolio .overlay-portfolio {
+  position: absolute;
+  background-color: rgba(255, 6, 6, 0.6);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  transition: All 0.2s ease-in-out;
+}
+.portfolio-content .item-col-portfolio .eye-icon-portfolio {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  left: 50%;
+  transition: All 0.3s ease-in-out;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: tomato;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 0px;
+  cursor: pointer;
+}
+.portfolio-content .item-col-portfolio .eye-icon-portfolio:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-modal-content {
+  width: 400px;
+  height: 400px;
+  margin-top: 90px;
+}
+
+.portfolio-modal .modal-header {
+  width: 980px !important;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+}
+
+.swiper-slide img {
+  width: auto;
+  height: auto;
+  width: 100% !important;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  object-fit: cover;
+  z-index: 999;
+  top: 50%;
+}
+.portfolio-modal-content .swiper-button-next {
+  right: -80% !important;
+  color: white;
+}
+.portfolio-modal-content .swiper-button-prev {
+  left: -80% !important;
+  color: white;
+}
+.modal-backdrop.show {
+  opacity: 0.9 !important; /* default is 0.5 */
+  background-color: rgba(0, 0, 0, 1) !important; /* optional: fully black */
+}
+.modal-content button {
+  color: wheat !important;
+  background-color: white !important;
+}
+@keyframes modalZoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal.animate .modal-dialog .swiper {
+  animation: modalZoomIn 0.3s ease-out;
+}
+
+/* ==================== End Portfolio page ======================= */
+/* ==================== Compare page ======================= */
+.compare-pro-section .row .col-2 .card {
+  border-radius: 0 !important;
+}
+.compare-pro-section .row .col-lg-2 {
+  width: 20% !important;
+}
+
+.btn-cart-compare a {
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+/* ==================== End Compare page ======================= */
+/* ==================== 404 page ======================= */
+.not-found .col-11 img {
+  width: 90%;
+  margin-top: -35px;
+}
+.not-found .col-11 h1 {
+  font-size: 50px;
+  margin-top: -70px;
+}
+.not-found .col-11 a {
+  padding: 15px 30px;
+  background-color: tomato;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+}
+/* ==================== End of 404 page ======================= */
 
 @media only screen and (max-width: 992px) {
   .swiper-slide img {
@@ -2412,6 +2568,25 @@ footer .new-letter-footer-form form input:focus {
     border-left: 1px solid transparent;
     border-top: 1px solid rgb(225, 225, 225);
   }
+  .portfolio-modal .modal-header {
+    width: 550px !important;
+    margin-top: 60px;
+  }
+  .not-found .col-11 img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .not-found .col-11 h1 {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .not-found .col-11 a {
+    padding: 15px 30px;
+    background-color: tomato;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -2422,6 +2597,25 @@ footer .new-letter-footer-form form input:focus {
     padding-right: 0px;
     text-align: center;
     padding: 0 20px;
+  }
+  .portfolio-modal .modal-header {
+    width: 450px !important;
+    margin-top: 60px;
+  }
+  .not-found .col-11 img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .not-found .col-11 h1 {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .not-found .col-11 a {
+    padding: 15px 30px;
+    background-color: tomato;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -2647,5 +2841,28 @@ footer .new-letter-footer-form form input:focus {
   }
   .profile-section .hide-mobile {
     display: none;
+  }
+  .portfolio-modal .modal-header {
+    width: 380px !important;
+    margin-top: 60px;
+  }
+  .btn-cart-compare a {
+    padding: 9px 20px;
+    font-size: 11px;
+  }
+  .not-found .col-11 img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .not-found .col-11 h1 {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .not-found .col-11 a {
+    padding: 15px 30px;
+    background-color: tomato;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
   }
 }
