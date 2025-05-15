@@ -1178,22 +1178,23 @@ footer .new-letter-footer-form form input:focus {
 }
 /* ================= End Shop Product Page ====================== */
 /* ================= cart checkout Shop Product Page ====================== */
-.cart-checkout .row .col-8 .col-12 .cancel-btn-cart i {
+.cart-checkout .row .col-12 .col-12 .cancel-btn-cart i {
   background-color: rgb(255, 255, 255);
   padding: 10px 13px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 50%;
   font-size: 17px;
 }
-.cart-checkout .row .col-8 .col-12 .cart-cover-checkout img {
+
+.cart-checkout .row .col-12 .col-12 .cart-cover-checkout img {
   width: 100px;
   border-radius: 6px;
   margin: 0 15px;
 }
-.cart-checkout .row .col-8 .col-12 .cart-content-text {
+.cart-checkout .row .col-12 .col-12 .cart-content-text {
   font-size: 13px;
 }
-.cart-checkout .row .col-8 .col-12 .cart-content-text p:first-child {
+.cart-checkout .row .col-12 .col-12 .cart-content-text p:first-child {
   font-size: 16px;
 }
 .cart-checkout .row .col-4 .redeme-coupon input {
@@ -2503,6 +2504,10 @@ footer .new-letter-footer-form form input:focus {
   text-decoration: none;
   border-radius: 3px;
   color: white;
+  transition: 0.2s ease-in-out;
+}
+.not-found .col-11 a:hover {
+  background-color: darkslategray;
 }
 /* ==================== End of 404 page ======================= */
 
@@ -2616,6 +2621,16 @@ footer .new-letter-footer-form form input:focus {
     text-decoration: none;
     border-radius: 3px;
     color: white;
+  }
+  .child-cart-border1 {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .child-cart-border2 {
+    border-top: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  .child-cart-border3 {
+    border-bottom: 1px solid #dee2e6 !important;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -2864,5 +2879,15 @@ footer .new-letter-footer-form form input:focus {
     text-decoration: none;
     border-radius: 3px;
     color: white;
+  }
+  .child-cart-border1 {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .child-cart-border2 {
+    border-top: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  .child-cart-border3 {
+    border-bottom: 1px solid #dee2e6 !important;
   }
 }
