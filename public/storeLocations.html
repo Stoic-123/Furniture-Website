@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Store Locations</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-lg-flex align-items-center justify-content-between"
+            >
+              <ul
+                class="navbar-nav gap-5 align-items-center justify-content-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Pages</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactUs.html">Contact</a>
+                </li>
+              </ul>
+              <div class="fs-5 d-none d-lg-block">
+                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
+                <i class="pe-4 fa-regular fa-user"></i>
+                <i class="pe-4 fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-contact my-5 position-relative">
+        <div class="hero-contact-overlay z-1 position-absolute"></div>
+        <div class="container h-100">
+          <div
+            class="h-100 position-relative text-white z-3 d-flex flex-column justify-content-center"
+          >
+            <h1 class="fw-bolder">Store Locations</h1>
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-white" href="index.html"
+                >Home</a
+              >
+              <div class="decor-contact-hero"></div>
+              <span>Store Locations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="container">
+          <div class="mb-5 text-center">
+            <h1>Find Our Stores</h1>
+            <p class="pt-3">
+              Visit one of our furniture showrooms to experience our quality
+              products in person.
+              <br />Our staff is ready to help you find the perfect furniture
+              for your home.
+            </p>
+          </div>
+
+          <div class="row gx-4 gy-4 mb-5">
+            <!-- Store Location Cards -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="assets/img/hero1.jpg"
+                    class="card-img-top"
+                    alt="Downtown Store"
+                    style="height: 220px; object-fit: cover"
+                  />
+                  <div
+                    class="position-absolute top-0 end-0 bg-danger text-white px-3 py-2 m-2 rounded-pill"
+                  >
+                    <i class="fa-solid fa-star me-1"></i> Flagship
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Downtown Showroom</h5>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    <p class="mb-0 ms-2">
+                      123 Main Street, Downtown, City 10001
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-clock text-danger"></i>
+                    <p class="mb-0 ms-2">Mon-Sat: 10am-7pm, Sun: 11am-5pm</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    <p class="mb-0 ms-2">+1 (555) 123-4567</p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="#" class="btn btn-outline-danger w-100"
+                      >Get Directions</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="assets/img/hero2.webp"
+                    class="card-img-top"
+                    alt="Westside Store"
+                    style="height: 220px; object-fit: cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Westside Gallery</h5>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    <p class="mb-0 ms-2">
+                      456 West Avenue, Westside, City 10002
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-clock text-danger"></i>
+                    <p class="mb-0 ms-2">Mon-Sat: 10am-8pm, Sun: 12pm-6pm</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    <p class="mb-0 ms-2">+1 (555) 456-7890</p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="#" class="btn btn-outline-danger w-100"
+                      >Get Directions</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="assets/img/hero3.jpg"
+                    class="card-img-top"
+                    alt="Eastside Store"
+                    style="height: 220px; object-fit: cover"
+                  />
+                  <div
+                    class="position-absolute top-0 end-0 bg-primary text-white px-3 py-2 m-2 rounded-pill"
+                  >
+                    <i class="fa-solid fa-couch me-1"></i> New
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Eastside Outlet</h5>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    <p class="mb-0 ms-2">
+                      789 East Boulevard, Eastside, City 10003
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-clock text-danger"></i>
+                    <p class="mb-0 ms-2">
+                      Mon-Fri: 11am-9pm, Sat-Sun: 10am-7pm
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    <p class="mb-0 ms-2">+1 (555) 789-0123</p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="#" class="btn btn-outline-danger w-100"
+                      >Get Directions</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter and Search Section -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="second-col-contact p-4 rounded-4">
+                <h4 class="mb-4">Find a Store Near You</h4>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <label for="stateSelect" class="form-label"
+                        >Select State</label
+                      >
+                      <select class="form-control" id="stateSelect">
+                        <option selected>Select State</option>
+                        <option>New York</option>
+                        <option>California</option>
+                        <option>Texas</option>
+                        <option>Florida</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="citySelect" class="form-label"
+                        >Select City</label
+                      >
+                      <select class="form-control" id="citySelect">
+                        <option selected>Select City</option>
+                        <option>New York City</option>
+                        <option>Los Angeles</option>
+                        <option>Chicago</option>
+                        <option>Miami</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                      <div class="btn-sub-contact w-100">
+                        <button type="submit" class="btn text-center w-100">
+                          Find Stores
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-contact">
+        <div class="col-12 my-5 py-5">
+          <div class="container">
+            <h2 class="mb-4 text-center">Our Store Locations</h2>
+          </div>
+          <div id="map" style="width: 100%; height: 600px"></div>
+        </div>
+      </section>
+
+      <!-- Store Services Section -->
+      <section class="bg-light py-5 mb-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Services Available at Our Stores</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center">
+                <div class="mb-3">
+                  <i class="fa-solid fa-ruler-combined fa-3x text-danger"></i>
+                </div>
+                <h5 class="fw-bold">Professional Measurement</h5>
+                <p>
+                  Our experts can take measurements to ensure your furniture
+                  fits perfectly in your space.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center">
+                <div class="mb-3">
+                  <i class="fa-solid fa-truck-fast fa-3x text-danger"></i>
+                </div>
+                <h5 class="fw-bold">Delivery Service</h5>
+                <p>
+                  Schedule furniture delivery right from our store to your
+                  doorstep.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center">
+                <div class="mb-3">
+                  <i class="fa-solid fa-palette fa-3x text-danger"></i>
+                </div>
+                <h5 class="fw-bold">Design Consultation</h5>
+                <p>
+                  Meet with our interior designers to help create your perfect
+                  space.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="text-center">
+                <div class="mb-3">
+                  <i class="fa-solid fa-sack-dollar fa-3x text-danger"></i>
+                </div>
+                <h5 class="fw-bold">Financing Options</h5>
+                <p>
+                  Learn about our flexible payment plans and financing options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gx-3 pt-5">
+          <div class="col-12 mb-3 mb-md-0 col-md-6 col-lg-3">
+            <div class="logo-footer">
+              <h2>LOGO</h2>
+            </div>
+            <div class="company-desc-footer py-3">
+              <p class="text-body-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                inventore itaque quas aperiam placeat harum culpa nobis, quod
+                expedita? Adipisci!
+              </p>
+            </div>
+            <div class="social-footer d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"> <i class="fa-brands fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Quick Links</h4>
+            </div>
+            <div class="quick-link-footer py-3">
+              <ul>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="wishlist.html"
+                    >Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="contactUs.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="privacy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="faq.html"
+                    >Frequently</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Account Info</h4>
+            </div>
+            <div class="account-info-footer py-3">
+              <ul>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="profile.html"
+                    >My Account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="cart.html"
+                    >Shopping Cart</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="auth.html"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="auth.html"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a class="text-body-secondary text-decoration-none" href="#"
+                    >Checkout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div>
+              <h4>Newsletter</h4>
+            </div>
+            <div class="newletter-desc-footer py-3">
+              <p class="text-body-secondary">
+                Get updates by subscribe our weekly newsletter
+              </p>
+            </div>
+            <div class="new-letter-footer-form">
+              <form class="d-flex justify-content-between">
+                <input type="text" id="" />
+                <button type="submit">
+                  Subscribe<i class="fa-solid fa-paper-plane ps-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="py-2 text-body-secondary">
+          <p>
+            Copyright © 2025 <span class="fw-bolder">Kimlong</span> . All Rights
+            Reserved.Design By <span class="fw-bolder">Kimlong</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJbcB8QOY9EEEwRnmfzPnJXXQV_Udwwag"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Initialize the map
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: { lat: 40.7128, lng: -74.006 }, // NYC coordinates as example
+        });
+
+        // Define store locations
+        var locations = [
+          {
+            position: { lat: 40.7128, lng: -74.006 },
+            title: "Downtown Showroom",
+            info: "123 Main Street, Downtown, City 10001",
+          },
+          {
+            position: { lat: 40.7328, lng: -74.036 },
+            title: "Westside Gallery",
+            info: "456 West Avenue, Westside, City 10002",
+          },
+          {
+            position: { lat: 40.6928, lng: -73.986 },
+            title: "Eastside Outlet",
+            info: "789 East Boulevard, Eastside, City 10003",
+          },
+        ];
+
+        // Add markers for each location
+        locations.forEach((location) => {
+          const marker = new google.maps.Marker({
+            position: location.position,
+            map: map,
+            title: location.title,
+          });
+
+          // Info window for each marker
+          const infoWindow = new google.maps.InfoWindow({
+            content: `<div><h5>${location.title}</h5><p>${location.info}</p></div>`,
+          });
+
+          marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+          });
+        });
+      }
+
+      // Call the initMap function when the page loads
+      window.onload = initMap;
+    </script>
+  </body>
+</html>

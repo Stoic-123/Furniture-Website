@@ -2407,7 +2407,7 @@ footer .new-letter-footer-form form input:focus {
   color: white;
 }
 
-.swiper {
+.portfolio-modal .swiper {
   width: 100%;
   height: 100%;
 }
@@ -2420,13 +2420,13 @@ footer .new-letter-footer-form form input:focus {
 .portfolio-modal .modal-header {
   width: 980px !important;
 }
-.swiper-slide {
+.portfolio-modal .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #000;
 }
 
-.swiper-slide img {
+.portfolio-modal .swiper-slide img {
   width: auto;
   height: auto;
   width: 100% !important;
