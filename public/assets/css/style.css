@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: "Dangrek", sans-serif;
 }
-/* ============== Hero section Home ====================== */
+/* ============== Hero section ទំព័រដើម ====================== */
 .main {
   position: relative;
 }
@@ -95,7 +95,7 @@
 }
 
 @keyframes fadeInUp {
-  from {
+  ពី {
     opacity: 0;
     transform: translateY(80px);
   }
@@ -127,8 +127,8 @@
   margin-right: 10px;
 }
 
-/* ================ End of Hero section of Home ================== */
-/* ================ Product Section Home ======================== */
+/* ================ End of Hero section of ទំព័រដើម ================== */
+/* ================ Product Section ទំព័រដើម ======================== */
 
 .product .row .col-md-6 {
   height: auto;
@@ -173,7 +173,7 @@
   padding-right: 100px !important;
 }
 /* ================= End of Product Section ===================== */
-/* ================= Popular Product Section Home ==================== */
+/* ================= Popular Product Section ទំព័រដើម ==================== */
 .tab-button {
   padding: 6px 20px;
   background-color: transparent;
@@ -452,10 +452,10 @@
 .author-name p > i {
   color: tomato;
 }
-.blog-content-home a p {
+.blog-content-ទំព័រដើម a p {
   transition: 0.2s ease-in-out;
 }
-.blog-content-home a:hover p {
+.blog-content-ទំព័រដើម a:hover p {
   color: tomato;
 }
 
@@ -972,7 +972,7 @@ footer .new-letter-footer-form form input:focus {
   height: auto;
 }
 .shop-section .top-rated-pro-item .product-color {
-  margin-left: -11px;
+  margin-left: 0px;
 }
 .shop-section .top-rated-pro-item span {
   color: tomato;
@@ -2120,7 +2120,7 @@ footer .new-letter-footer-form form input:focus {
   box-shadow: none; /* Optional: remove shadow if any */
 }
 .profile-img-last {
-  background-image: url("https://cdn.pixabay.com/photo/2023/03/18/08/23/home-7860106_1280.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/18/08/23/ទំព័រដើម-7860106_1280.jpg");
   height: 500px;
   width: 100% !important;
   display: flex;
@@ -2457,7 +2457,7 @@ footer .new-letter-footer-form form input:focus {
   background-color: white !important;
 }
 @keyframes modalZoomIn {
-  from {
+  ពី {
     transform: scale(0.7);
     opacity: 0;
   }

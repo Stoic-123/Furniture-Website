@@ -10,10 +10,10 @@ var swiper = new Swiper(".mySwiper", {
     delay: 3000,
     disableOnInteraction: false,
   },
-  
+
   on: {
     slideChangeTransitionStart: function () {
-      // Remove animate class from all slide contents
+      // Remove animate class ពី all slide contents
       document.querySelectorAll('.slide-content, .slide-content-chile-2').forEach(el => {
         el.classList.remove('animate');
       });
@@ -50,7 +50,7 @@ var FeedbackSwiper = new Swiper(".mySwiper2", {
     el: ".swiper-pagination2",
     clickable: true,
   },
-   breakpoints: {
+  breakpoints: {
     640: {
       slidesPerView: 1,
       spaceBetween: 20,
