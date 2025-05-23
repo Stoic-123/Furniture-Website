@@ -1692,14 +1692,14 @@ footer .new-letter-footer-form form input:focus {
   background-color: rgb(255, 255, 255);
   width: 100%;
   position: fixed;
-  bottom: 0%;
+  bottom: -2%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   z-index: 99;
 }
 .bottom-nav ul li {
   list-style: none;
-  padding: 15px 5px;
+  padding: 20px 5px;
 }
 .bottom-nav ul li a i {
   background-color: tomato;
