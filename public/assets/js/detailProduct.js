@@ -10,7 +10,7 @@ var largeImageSwiper = new Swiper(".largeImageSwiper", {
 
 // Initialize Swiper for small images
 var DetailProductSwiper = new Swiper(".mySwiper4", {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -21,7 +21,7 @@ var DetailProductSwiper = new Swiper(".mySwiper4", {
     slideClass: "swiper-slide4",
     breakpoints: {
         640: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 20,
         },
         768: {

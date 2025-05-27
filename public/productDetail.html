@@ -26,7 +26,7 @@
     <title>Product Details</title>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
     <header>
       <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
         <div class="container">
@@ -120,7 +120,7 @@
       <section class="more-detail-product my-5 pt-5">
         <div class="container">
           <div class="row gx-5">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="swiper5 largeImageSwiper overflow-hidden">
                 <div class="swiper-wrapper5 d-flex justify-content-between">
                   <div class="swiper-slide5 col-12">
@@ -220,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
               <div>
                 <h2>កៅអីប្លាស្ទិកទាន់សម័យ</h2>
                 <p class="text-danger fw-bolder fs-5 pt-2">
@@ -307,88 +307,31 @@
           </div>
         </div>
       </section>
-      <section class="my-5 bg-light pt-5">
+      <section class="my-5 py-5 last-profile-section">
         <div class="container">
-          <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="pills-ទំព័រដើម-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-ទំព័រដើម"
-                type="button"
-                role="tab"
-                aria-controls="pills-ទំព័រដើម"
-                aria-selected="true"
-              >
-                ទំព័រដើម
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-profile-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-profile"
-                type="button"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-              >
-                Profile
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-ទំព័រដើម"
-              role="tabpanel"
-              aria-labelledby="pills-ទំព័រដើម-tab"
-              tabindex="0"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-profile"
-              role="tabpanel"
-              aria-labelledby="pills-profile-tab"
-              tabindex="0"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-contact"
-              role="tabpanel"
-              aria-labelledby="pills-contact-tab"
-              tabindex="0"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-disabled"
-              role="tabpanel"
-              aria-labelledby="pills-disabled-tab"
-              tabindex="0"
-            >
-              ...
+          <div class="col-12 profile-img-last">
+            <div class="last-profile-child col-12 col-lg-6 text-white">
+              <p class="mb-0">ចង់បានការផ្តល់ជូនជាទៀងទាត់ទេ?</p>
+              <h3 class="py-3">
+                ចុះឈ្មោះទទួលព័ត៌មានសំបុត្រ
+                <br />
+                សម្រាប់ទទួលព័ត៌មានថ្មីប្រចាំថ្ងៃ
+              </h3>
+              <div class="new-letter-footer-form">
+                <form class="d-flex justify-content-between">
+                  <input
+                    class="col-9"
+                    type="email"
+                    id=""
+                    placeholder="បញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក"
+                  />
+                  <button type="submit">
+                    ចុះឈ្មោះ<i
+                      class="fa-solid fa-paper-plane ps-2 d-none d-lg-block"
+                    ></i>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -415,12 +358,14 @@
             </li>
             <li>
               <a href="cart.html"
-                ><i class="fa-solid fa-bag-shopping"></i><label>កន្រ្តក</label></a
+                ><i class="fa-solid fa-bag-shopping"></i
+                ><label>កន្រ្តក</label></a
               >
             </li>
             <li>
               <a href="wishlist.html"
-                ><i class="fa-regular fa-heart"></i><label>ទំនិញដែលពេញចិត្ត</label></a
+                ><i class="fa-regular fa-heart"></i
+                ><label>ទំនិញដែលពេញចិត្ត</label></a
               >
             </li>
           </ul>
@@ -526,7 +471,9 @@
                   >
                 </li>
                 <li>
-                  <a class="text-body-secondary text-decoration-none" href="cart.html"
+                  <a
+                    class="text-body-secondary text-decoration-none"
+                    href="cart.html"
                     >បញ្ចប់ការបញ្ជាទិញ</a
                   >
                 </li>

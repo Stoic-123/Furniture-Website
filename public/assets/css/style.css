@@ -551,7 +551,13 @@ footer .new-letter-footer-form form input:focus {
   height: 2px;
   margin: 0 15px;
 }
-
+.first-tab-detail-product img {
+  width: 500px;
+  height: 500px;
+}
+.dropdown-menu li {
+  padding: 10px 10px;
+}
 /* ================= End Product Detial Hero Section ====================== */
 /* ================= More Product Detial Hero Section ====================== */
 
