@@ -20,7 +20,26 @@
     <title>Frequently</title>
   </head>
   <body>
-    <header>
+    <header class="position-relative">
+      <div class="position-absolute w-100 bg-white" id="search-header">
+        <div class="container py-5 position-relative">
+          <div class="position-absolute cancel_icon_header">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <h1 class="pb-3 text-center">ស្វែងរកទំនិញ</h1>
+          <form class="d-flex search-header" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">LOGO</a>
@@ -117,10 +136,19 @@
                 </li>
               </ul>
               <div class="fs-5 d-none d-lg-block">
-                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
-                <i class="pe-4 fa-regular fa-user"></i>
-                <i class="pe-4 fa-regular fa-heart"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i
+                  id="search-icon-head"
+                  class="pe-4 fa-solid fa-magnifying-glass"
+                ></i>
+                <a class="text-black" href="profile.html"
+                  ><i class="pe-4 fa-regular fa-user"></i
+                ></a>
+                <a class="text-black" href="wishlist.html"
+                  ><i class="pe-4 fa-regular fa-heart"></i
+                ></a>
+                <a class="text-black" href="cart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -596,5 +624,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

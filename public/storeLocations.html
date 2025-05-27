@@ -17,10 +17,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Store Locations</title>
+    <title>ទីតាំងហាង</title>
   </head>
   <body>
-    <header>
+    <header class="position-relative">
+      <div class="position-absolute w-100 bg-white" id="search-header">
+        <div class="container py-5 position-relative">
+          <div class="position-absolute cancel_icon_header">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <h1 class="pb-3 text-center">ស្វែងរកទំនិញ</h1>
+          <form class="d-flex search-header" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              ស្វែងរក
+            </button>
+          </form>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg py-3 bg-body-tertiary fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">LOGO</a>
@@ -117,10 +136,19 @@
                 </li>
               </ul>
               <div class="fs-5 d-none d-lg-block">
-                <i class="pe-4 fa-solid fa-magnifying-glass"></i>
-                <i class="pe-4 fa-regular fa-user"></i>
-                <i class="pe-4 fa-regular fa-heart"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i
+                  id="search-icon-head"
+                  class="pe-4 fa-solid fa-magnifying-glass"
+                ></i>
+                <a class="text-black" href="profile.html"
+                  ><i class="pe-4 fa-regular fa-user"></i
+                ></a>
+                <a class="text-black" href="wishlist.html"
+                  ><i class="pe-4 fa-regular fa-heart"></i
+                ></a>
+                <a class="text-black" href="cart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -134,13 +162,13 @@
           <div
             class="h-100 position-relative text-white z-3 d-flex flex-column justify-content-center"
           >
-            <h1 class="fw-bolder">Store Locations</h1>
+            <h1 class="fw-bolder">ទីតាំងហាង</h1>
             <div class="d-flex align-items-center">
               <a class="text-decoration-none text-white" href="index.html"
                 >ទំព័រដើម</a
               >
               <div class="decor-contact-hero"></div>
-              <span>Store Locations</span>
+              <span>ទីតាំងហាង</span>
             </div>
           </div>
         </div>
@@ -149,12 +177,12 @@
       <section class="mb-5">
         <div class="container">
           <div class="mb-5 text-center">
-            <h1>Find Our Stores</h1>
+            <h1>ស្វែងរកហាងរបស់យើង</h1>
             <p class="pt-3">
-              Visit one of our furniture showrooms to experience our quality
-              products in person.
-              <br />Our staff is ready to help you find the perfect furniture
-              for your ទំព័រដើម.
+              មកទស្សនាបន្ទប់តាំងបង្ហាញគ្រឿងសង្ហារឹមរបស់យើងមួយ
+              ដើម្បីទទួលបានបទពិសោធន៍ផលិតផលគុណភាពរបស់យើងដោយផ្ទាល់។
+
+              <br />បុគ្គលិករបស់យើងត្រៀមខ្លួនជួយអ្នកស្វែងរកគ្រឿងសង្ហារឹមដ៏ល្អឥតខ្ចោះសម្រាប់ផ្ទះរបស់អ្នក។
             </p>
           </div>
 
@@ -176,24 +204,28 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Downtown Showroom</h5>
+                  <h5 class="card-title fw-bold">
+                    បន្ទប់តាំងបង្ហាញកណ្តាលទីក្រុង
+                  </h5>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-location-dot text-danger"></i>
                     <p class="mb-0 ms-2">
-                      123 Main Street, Downtown, City 10001
+                      1១២៣ ផ្លូវធំ, កណ្តាលទីក្រុង, ទីក្រុង ១០០០១
                     </p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-clock text-danger"></i>
-                    <p class="mb-0 ms-2">Mon-Sat: 10am-7pm, Sun: 11am-5pm</p>
+                    <p class="mb-0 ms-2">
+                      ចន្ទ-សៅរ៍: ១០ព្រឹក-៧ល្ងាច, អាទិត្យ: ១១ព្រឹក-៥ល្ងាច
+                    </p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-phone text-danger"></i>
-                    <p class="mb-0 ms-2">+1 (555) 123-4567</p>
+                    <p class="mb-0 ms-2">+១ (៥៥ៅ) ១២៣-៤ៅ៦៧</p>
                   </div>
                   <div class="mt-3">
                     <a href="#" class="btn btn-outline-danger w-100"
-                      >Get Directions</a
+                      >ទទួលទិសដៅ</a
                     >
                   </div>
                 </div>
@@ -211,24 +243,24 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Westside Gallery</h5>
+                  <h5 class="card-title fw-bold">វិចិត្រសាលខាងលិច</h5>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-location-dot text-danger"></i>
-                    <p class="mb-0 ms-2">
-                      456 West Avenue, Westside, City 10002
-                    </p>
+                    <p class="mb-0 ms-2">៤៥៦ ផ្លូវលិច, ខាងលិច, ទីក្រុង ១០០០២</p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-clock text-danger"></i>
-                    <p class="mb-0 ms-2">Mon-Sat: 10am-8pm, Sun: 12pm-6pm</p>
+                    <p class="mb-0 ms-2">
+                      ចន្ទ-សៅរ៍: ១០ព្រឹក-៨ល្ងាច, អាទិត្យ: ១២រសៀល-៦ល្ងាច
+                    </p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-phone text-danger"></i>
-                    <p class="mb-0 ms-2">+1 (555) 456-7890</p>
+                    <p class="mb-0 ms-2">+១ (៥៥៥) ៤ៅ៦-៧៨៩០</p>
                   </div>
                   <div class="mt-3">
                     <a href="#" class="btn btn-outline-danger w-100"
-                      >Get Directions</a
+                      >ទទួលទិសដៅ</a
                     >
                   </div>
                 </div>
@@ -247,30 +279,30 @@
                   <div
                     class="position-absolute top-0 end-0 bg-primary text-white px-3 py-2 m-2 rounded-pill"
                   >
-                    <i class="fa-solid fa-couch me-1"></i> New
+                    <i class="fa-solid fa-couch me-1"></i> ថ្មី
                   </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Eastside Outlet</h5>
+                  <h5 class="card-title fw-bold">ហាងលក់បញ្ចុះតម្លៃខាងកើត</h5>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-location-dot text-danger"></i>
                     <p class="mb-0 ms-2">
-                      789 East Boulevard, Eastside, City 10003
+                      ៧៨៩ ផ្លូវបូលេវ៉ាដខាងកើត, ខាងកើត, ទីក្រុង ១០០០៣
                     </p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-clock text-danger"></i>
                     <p class="mb-0 ms-2">
-                      Mon-Fri: 11am-9pm, Sat-Sun: 10am-7pm
+                      ចន្ទ-សុក្រ: ១១ព្រឹក-៩ល្ងាច, សៅរ៍-អាទិត្យ: ១០ព្រឹក-៧ល្ងាច
                     </p>
                   </div>
                   <div class="d-flex align-items-center mb-3">
                     <i class="fa-solid fa-phone text-danger"></i>
-                    <p class="mb-0 ms-2">+1 (555) 789-0123</p>
+                    <p class="mb-0 ms-2">+១ (៥៥៥) ៧៨៩-០១២៣</p>
                   </div>
                   <div class="mt-3">
                     <a href="#" class="btn btn-outline-danger w-100"
-                      >Get Directions</a
+                      >ទទួលទិសដៅ</a
                     >
                   </div>
                 </div>
@@ -282,15 +314,15 @@
           <div class="row mb-5">
             <div class="col-12">
               <div class="second-col-contact p-4 rounded-4">
-                <h4 class="mb-4">Find a Store Near You</h4>
+                <h4 class="mb-4">ស្វែងរកហាងនៅជិតអ្នក</h4>
                 <form>
                   <div class="row g-3">
                     <div class="col-md-4">
                       <label for="stateSelect" class="form-label"
-                        >Select State</label
+                        >ជ្រើសរើសរដ្ឋ</label
                       >
                       <select class="form-control" id="stateSelect">
-                        <option selected>Select State</option>
+                        <option selected>ជ្រើសរើសរដ្ឋ</option>
                         <option>New York</option>
                         <option>California</option>
                         <option>Texas</option>
@@ -299,10 +331,10 @@
                     </div>
                     <div class="col-md-4">
                       <label for="citySelect" class="form-label"
-                        >Select City</label
+                        >ជ្រើសរើសទីក្រុង</label
                       >
                       <select class="form-control" id="citySelect">
-                        <option selected>Select City</option>
+                        <option selected>ជ្រើសរើសទីក្រុង</option>
                         <option>New York City</option>
                         <option>Los Angeles</option>
                         <option>Chicago</option>
@@ -312,7 +344,7 @@
                     <div class="col-md-4 d-flex align-items-end">
                       <div class="btn-sub-contact w-100">
                         <button type="submit" class="btn text-center w-100">
-                          Find Stores
+                          ស្វែងរកហាង
                         </button>
                       </div>
                     </div>
@@ -327,7 +359,7 @@
       <section class="map-contact">
         <div class="col-12 my-5 py-5">
           <div class="container">
-            <h2 class="mb-4 text-center">Our Store Locations</h2>
+            <h2 class="mb-4 text-center">ទីតាំងហាងរបស់យើង</h2>
           </div>
           <div id="map" style="width: 100%; height: 600px"></div>
         </div>
@@ -336,17 +368,16 @@
       <!-- Store Services Section -->
       <section class="bg-light py-5 mb-5">
         <div class="container">
-          <h2 class="text-center mb-5">Services Available at Our Stores</h2>
+          <h2 class="text-center mb-5">សេវាកម្មដែលមាននៅហាងរបស់យើង</h2>
           <div class="row g-4">
             <div class="col-md-6 col-lg-3">
               <div class="text-center">
                 <div class="mb-3">
                   <i class="fa-solid fa-ruler-combined fa-3x text-danger"></i>
                 </div>
-                <h5 class="fw-bold">Professional Measurement</h5>
+                <h5 class="fw-bold">ការវាស់វែងដោយអ្នកជំនាញ</h5>
                 <p>
-                  Our experts can take measurements to ensure your furniture
-                  fits perfectly in your space.
+                  អ្នកជំនាញរបស់យើងអាចវាស់វែងដើម្បីធានាថាគ្រឿងសង្ហារឹមរបស់អ្នកសមសម្រាប់ល្អឥតខ្ចោះនៅក្នុងកន្លែងរបស់អ្នក។
                 </p>
               </div>
             </div>
@@ -355,10 +386,9 @@
                 <div class="mb-3">
                   <i class="fa-solid fa-truck-fast fa-3x text-danger"></i>
                 </div>
-                <h5 class="fw-bold">Delivery Service</h5>
+                <h5 class="fw-bold">សេវាកម្មដឹកជញ្ជូន</h5>
                 <p>
-                  Schedule furniture delivery right ពី our store to your
-                  doorstep.
+                  កំណត់ពេលវេលាដឹកជញ្ជូនគ្រឿងសង្ហារឹមពីហាងរបស់យើងទៅផ្ទះរបស់អ្នក។
                 </p>
               </div>
             </div>
@@ -367,10 +397,10 @@
                 <div class="mb-3">
                   <i class="fa-solid fa-palette fa-3x text-danger"></i>
                 </div>
-                <h5 class="fw-bold">Design Consultation</h5>
+                <h5 class="fw-bold">ការប្រឹក្សាយោបល់ការរចនា</h5>
                 <p>
-                  Meet with our interior designers to help create your perfect
-                  space.
+                  ជួបជាមួយអ្នករចនាក្នុងផ្ទះរបស់យើង
+                  ដើម្បីជួយបង្កើតកន្លែងដ៏ល្អឥតខ្ចោះរបស់អ្នក។
                 </p>
               </div>
             </div>
@@ -379,9 +409,9 @@
                 <div class="mb-3">
                   <i class="fa-solid fa-sack-dollar fa-3x text-danger"></i>
                 </div>
-                <h5 class="fw-bold">Financing Options</h5>
+                <h5 class="fw-bold">ជម្រើសផ្នែកហិរញ្ញវត្ថុ</h5>
                 <p>
-                  Learn about our flexible payment plans and financing options.
+                  រៀនអំពីគម្រោងទូទាត់ដែលបត់បែនបាន និងជម្រើសហិរញ្ញវត្ថុរបស់យើង។
                 </p>
               </div>
             </div>
@@ -571,54 +601,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Initialize the map
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 12,
-          center: { lat: 40.7128, lng: -74.006 }, // NYC coordinates as example
-        });
-
-        // Define store locations
-        var locations = [
-          {
-            position: { lat: 40.7128, lng: -74.006 },
-            title: "Downtown Showroom",
-            info: "123 Main Street, Downtown, City 10001",
-          },
-          {
-            position: { lat: 40.7328, lng: -74.036 },
-            title: "Westside Gallery",
-            info: "456 West Avenue, Westside, City 10002",
-          },
-          {
-            position: { lat: 40.6928, lng: -73.986 },
-            title: "Eastside Outlet",
-            info: "789 East Boulevard, Eastside, City 10003",
-          },
-        ];
-
-        // Add markers for each location
-        locations.forEach((location) => {
-          const marker = new google.maps.Marker({
-            position: location.position,
-            map: map,
-            title: location.title,
-          });
-
-          // Info window for each marker
-          const infoWindow = new google.maps.InfoWindow({
-            content: `<div><h5>៛{location.title}</h5><p>៛{location.info}</p></div>`,
-          });
-
-          marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-          });
-        });
-      }
-
-      // Call the initMap function when the page loads
-      window.onload = initMap;
-    </script>
+    <script src="assets/js/storeLocation.js"></script>
   </body>
 </html>

@@ -1,15 +1,3 @@
-var swiper = new Swiper(".mySwiper", {
-
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
 window.onload = () => {
     const searchContent = document.getElementById("search-header");
     const icon = document.getElementById("search-icon-head");
