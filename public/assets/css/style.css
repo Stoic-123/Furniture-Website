@@ -21,8 +21,9 @@
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-#search-header{
+#search-header {
   position: fixed !important;
+  margin-top: -200px;
 }
 .cancel_icon_header {
   top: 20%;
@@ -212,7 +213,7 @@
 .tab-content.active {
   display: block;
 }
-.tab-content .col-6 .card img{
+.tab-content .col-6 .card img {
   height: 300px;
   object-fit: cover;
 }
