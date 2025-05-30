@@ -18,7 +18,7 @@ window.onload = () => {
 
   });
   icon2.addEventListener("click", () => {
-    searchContent.style.marginTop = "0px";
+    searchContent.style.marginTop = "-45px";
     searchContent.style.transition = "0.3s"
     body.style.overflowY = "hidden";
 
