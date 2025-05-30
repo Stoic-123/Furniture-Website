@@ -2506,8 +2506,9 @@ footer .new-letter-footer-form form input:focus {
 .compare-pro-section .row .col-2 .card {
   border-radius: 0 !important;
 }
-.compare-pro-section .row .col-lg-2 {
-  width: 20% !important;
+.compare-pro-section .col-12 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .btn-cart-compare a {
@@ -2919,5 +2920,14 @@ footer .new-letter-footer-form form input:focus {
   }
   .child-cart-border3 {
     border-bottom: 1px solid #dee2e6 !important;
+  }
+  .compare-pro-section .col-12 {
+    padding: 0 38px;
+  }
+  .compare-pro-section .col-12 .row .col-5 .card p {
+    font-size: 12px;
+  }
+  .btn-cart-compare a{
+    font-size: 6px ;
   }
 }
