@@ -2930,4 +2930,7 @@ footer .new-letter-footer-form form input:focus {
   .btn-cart-compare a{
     font-size: 6px ;
   }
+  .safe-check-img{
+    width: 80%;
+  }
 }
